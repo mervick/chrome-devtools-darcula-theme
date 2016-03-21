@@ -1,0 +1,27 @@
+$veryImportant: !important !important;
+
+$Images_toolbarButtonGlyphs_bundled: url(chrome-devtools://devtools/bundled/Images/toolbarButtonGlyphs.png);
+$Images_toolbarButtonGlyphs: url(Images/toolbarButtonGlyphs.png);
+$Images_paneAddButtons: url(Images/paneAddButtons.png);
+$Images_paneRefreshButtons: url(Images/paneRefreshButtons.png);
+$Images_paneSettingsButtons: url(Images/paneSettingsButtons.png);
+$Images_paneElementStateButtons: url(Images/paneElementStateButtons.png);
+$Images_paneAnimationsButtons: url(Images/paneAnimationsButtons.png);
+$Images_navigationControls: url(Images/navigationControls.png);
+$Images_navigationControls_2x: url(Images/navigationControls_2x.png);
+
+@mixin mask-image-set($content...) {
+    -webkit-mask-image: -webkit-image-set($content);
+}
+
+%elements-hover-dom-tree {
+    outline: 1px solid #363636 !important;
+    //background-color: rgba(0, 0, 0, 0.1);
+}
+
+%elements-hover-dom-pseudo {
+    color: #a6371a !important
+}
+
+$selection-fg: #364c3b;
+$selection-fg: #214283;

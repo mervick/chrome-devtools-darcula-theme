@@ -1,0 +1,37 @@
+@import "__animations";
+
+.popover {
+    animation: growFadeIn .2s ease-in-out
+}
+
+.popover.top-left-arrow {
+    transform-origin: 25% 0%
+}
+
+.popover.top-right-arrow {
+    transform-origin: 75% 0%
+}
+
+.popover.right-top-arrow {
+    transform-origin: 100% 10%
+}
+
+.popover.right-bottom-arrow {
+    transform-origin: 100% 90%
+}
+
+.popover.bottom-left-arrow {
+    transform-origin: 25% 100%
+}
+
+.popover.bottom-right-arrow {
+    transform-origin: 75% 100%
+}
+
+.popover.left-top-arrow {
+    transform-origin: 0% 10%
+}
+
+.popover.left-bottom-arrow {
+    transform-origin: 0% 90%
+}

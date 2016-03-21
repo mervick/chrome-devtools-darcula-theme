@@ -1,0 +1,24 @@
+@import "__variables";
+
+.panel.elements ::shadow .parent + .children {
+    transition: .5s ease-in .25s
+}
+
+.panel.elements ::shadow .hovered.parent.expanded + .children > li:last-of-type .webkit-html-tag.close,
+.panel.elements ::shadow .selected.parent.expanded + .children > li:last-of-type .webkit-html-tag.close {
+    transition: opacity .5s ease-in-out .25s
+}
+
+.panel.elements ::shadow .parent.selected.expanded + .children, .panel.elements ::shadow .parent.hovered.expanded + .children {
+    @extend %elements-hover-dom-tree;
+}
+
+.panel.elements ::shadow .parent.selected.expanded + .children > li .webkit-html-pseudo-element:first-child,
+.panel.elements ::shadow .parent.hovered.expanded + .children > li .webkit-html-pseudo-element:first-child {
+    @extend %elements-hover-dom-pseudo;
+}
+
+.panel.elements ::shadow .parent.selected.expanded + .children > li:last-of-type .webkit-html-tag.close,
+.panel.elements ::shadow .parent.hovered.expanded + .children > li:last-of-type .webkit-html-tag.close {
+    opacity: 0.5 !important
+}
