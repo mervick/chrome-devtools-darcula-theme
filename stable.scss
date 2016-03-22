@@ -663,9 +663,9 @@ button.overrides-swap:not(:disabled):active {
 }
 
 ::shadow .search-match:hover {
-    background-color: #2f2f2f !important;
-    box-shadow: inset 0 1px 0 0 #484848,
-inset 0 -1px 0 0 #484848
+    //background-color: #2f2f2f !important;
+    background-color: red !important;
+    box-shadow: inset 0 1px 0 0 #484848, inset 0 -1px 0 0 #484848
 }
 
 ::shadow .search-match-content {
@@ -782,17 +782,17 @@ inset 0 -1px 0 0 #484848
 
 .panel .sidebar-tree-item.selected {
     //background-color: #0D293E !important;
-    background-color: #364c3b !important;
-    color: #e6e6e6 !important;
-    box-shadow: inset 0 1px 0 0 #56795e,
-inset 0 -1px 0 0 #56795e
+    background-color: $selection-fg !important;
+    color: $selection-color !important;
+    box-shadow: inset 0 1px 0 0 $selection-border-color,
+        inset 0 -1px 0 0 $selection-border-color;
 }
 
 .panel .sidebar-tree-item:not(.selected):hover {
     background-color: #2f2f2f !important;
     color: #ccc !important;
     box-shadow: inset 0 1px 0 0 #484848,
-inset 0 -1px 0 0 #484848
+        inset 0 -1px 0 0 #484848
 }
 
 .panel .sidebar-tree-item .disclosure-button {
@@ -889,8 +889,8 @@ inset 0 -1px 0 0 #484848
 
 ::shadow .tree-outline li.selected .selection {
     background-color: $selection-fg !important;
-    box-shadow: inset 0 1px 0 0 #56795e,
-inset 0 -1px 0 0 #56795e
+    box-shadow: inset 0 1px 0 0 $selection-border-color,
+        inset 0 -1px 0 0 $selection-border-color
 }
 
 .soft-context-menu {
@@ -910,7 +910,7 @@ inset 0 -1px 0 0 #56795e
 }
 
 .soft-context-menu::shadow .checkmark {
-    -webkit-mask-image: $Images_toolbarButtonGlyphs_bundled;
+    -webkit-mask-image: $Images_toolbarButtonGlyphs;
     -webkit-mask-position: -128px -109px;
     -webkit-mask-size: 352px 168px;
     background-color: #89f5a2 !important;
@@ -1036,28 +1036,7 @@ inset 0 -1px 0 0 #56795e
     -webkit-mask-position: -4px -94px !important
 }
 
-.outline-disclosure li.parent::before {
-    -webkit-mask-position: -4px -96px !important
-}
-
-.outline-disclosure li.parent.expanded::before {
-    -webkit-mask-position: -20px -96px !important
-}
-
-.outline-disclosure li.parent::before,
-.outline-disclosure li.parent.expanded::before {
-    background-color: #8c8c8c !important;
-    background-image: none !important;
-    -webkit-mask-image: $Images_toolbarButtonGlyphs !important;
-    -webkit-mask-repeat: no-repeat !important;
-    color: rgba(0, 0, 0, 0) !important;
-    opacity: 1 !important
-}
-
-.request-headers-view .outline-disclosure li.parent::before,
-.request-headers-view .outline-disclosure li.parent.expanded::before {
-    margin: 0 4px !important
-}
+@import "app/treeArrow";
 
 ::shadow #search-results-pane-file-based .parent::before {
     -webkit-mask-position: -4px -96px !important
@@ -1517,7 +1496,7 @@ body /deep/ .link {
 .panel.console ::shadow .outline-disclosure li.selected .selection,
 .panel.elements ::shadow .elements-disclosure li.selected .selection,
 .panel.console ::shadow .elements-disclosure li.selected .selection {
-    outline: 1px solid #56795e !important;
+    outline: 1px solid $selection-border-color !important;
     background-color: $selection-fg !important
 }
 
@@ -1878,8 +1857,7 @@ inset 0 -1px 0 0 rgba(86, 121, 94, 0.5)
 }
 
 .profiles-status-bar {
-    background: -webkit-linear-gradient(#505050,
-#363636) !important;
+    background: -webkit-linear-gradient(#505050, #363636) !important;
     box-shadow: inset 0 1px 0 #626262 !important;
     border-bottom: none !important
 }
@@ -1947,8 +1925,7 @@ input.status-bar-item:focus {
 }
 
 .resources-status-bar .status-bar {
-    background: -webkit-linear-gradient(#505050,
-#363636) !important;
+    background: -webkit-linear-gradient(#505050, #363636) !important;
     box-shadow: inset 0 1px 0 #626262 !important;
     border-top: none !important
 }
@@ -2298,7 +2275,7 @@ input.status-bar-item:focus {
 
 ::shadow ::shadow .devices-list-edit,
 ::shadow ::shadow .devices-list-remove {
-    -webkit-mask-image: $Images_toolbarButtonGlyphs_bundled !important;
+    -webkit-mask-image: $Images_toolbarButtonGlyphs !important;
     background-color: #89f5a2 !important;
     background-image: none !important
 }
@@ -2539,7 +2516,7 @@ inset 0 -1px 0 0 #484848
 
 ::shadow ::shadow ::shadow .conditions-list-edit,
 ::shadow ::shadow ::shadow .conditions-list-remove {
-    -webkit-mask-image: $Images_toolbarButtonGlyphs_bundled !important;
+    -webkit-mask-image: $Images_toolbarButtonGlyphs !important;
     background-color: #89f5a2 !important;
     background-image: none !important
 }
@@ -2698,8 +2675,8 @@ inset 0 -1px 0 0 #484848
 
 .sidebar-pane .breakpoint-hit {
     background: $selection-fg !important;
-    border-top: 1px solid #56795e !important;
-    border-bottom: 1px solid #56795e !important
+    border-top: 1px solid $selection-border-color !important;
+    border-bottom: 1px solid $selection-border-color !important
 }
 
 .sidebar-pane ::shadow .list-item .title,
@@ -2713,9 +2690,9 @@ inset 0 -1px 0 0 #484848
 
 .sidebar-pane ::shadow .list-item.selected {
     background: $selection-fg !important;
-    color: #e6e6e6 !important;
-    border-top: 1px solid #56795e !important;
-    border-bottom: 1px solid #56795e !important
+    color: $selection-color !important;
+    border-top: 1px solid $selection-border-color !important;
+    border-bottom: 1px solid $selection-border-color !important
 }
 
 .sidebar-pane ::shadow .list-item.selected .title,
@@ -3404,7 +3381,7 @@ body .CodeMirror .CodeMirror-selectedtext:not(.CodeMirror-persist-highlight) {
 
 .webkit-line-content .text-editor-overlay-highlight {
     background-color: $selection-fg !important;
-    outline: 1px solid #56795e !important
+    outline: 1px solid $selection-border-color !important
 }
 
 ::shadow .spectrum-text-value {
@@ -4255,7 +4232,7 @@ body .CodeMirror .CodeMirror-selectedtext:not(.CodeMirror-persist-highlight) {
 .styles-section .style-properties li.filter-match,
 .styles-section .simple-selector.filter-match {
     background-color: $selection-fg !important;
-    box-shadow: 0 0 0 1px #56795e !important;
+    box-shadow: 0 0 0 1px $selection-border-color !important;
     border-radius: 2px
 }
 
@@ -4356,9 +4333,9 @@ div.ax-computed-name {
 
 .panel:not(.elements):not(.console) .outline-disclosure li.selected .selection {
     background: $selection-fg !important;
-    color: #e6e6e6 !important;
-    border-top: 1px solid #56795e !important;
-    border-bottom: 1px solid #56795e !important;
+    color: $selection-color !important;
+    border-top: 1px solid $selection-border-color !important;
+    border-bottom: 1px solid $selection-border-color !important;
     margin-top: -1px !important
 }
 
@@ -4375,9 +4352,9 @@ div.ax-computed-name {
 
 .panel:not(.elements):not(.console) .outline-disclosure ol:focus li.selected .selection {
     background: $selection-fg !important;
-    color: #e6e6e6 !important;
-    border-top: 1px solid #56795e !important;
-    border-bottom: 1px solid #56795e !important;
+    color: $selection-color !important;
+    border-top: 1px solid $selection-border-color !important;
+    border-bottom: 1px solid $selection-border-color !important;
     margin-top: -1px !important;
     text-shadow: none !important
 }
@@ -4423,7 +4400,7 @@ div.ax-computed-name {
     position: relative !important;
     right: 10px !important;
     background-image: none !important;
-    -webkit-mask-image: $Images_toolbarButtonGlyphs_bundled !important;
+    -webkit-mask-image: $Images_toolbarButtonGlyphs !important;
     -webkit-mask-position: -20px -96px !important;
     background-color: #8c8c8c !important
 }
@@ -4616,7 +4593,7 @@ html /deep/ .component-root {
 
 .source-frame-eval-expression {
     background-color: $selection-fg !important;
-    border-color: #56795e !important
+    border-color: $selection-border-color !important
 }
 
 .cm-atom {
@@ -5195,7 +5172,7 @@ html /deep/ .component-root {
 
 .data-grid .data-container tr.selected {
     background-color: $selection-fg !important;
-    outline: 1px solid #56795e !important
+    outline: 1px solid $selection-border-color !important
 }
 
 .data-grid .data-container tr .editing * {
@@ -5550,3 +5527,5 @@ body .inspector-view-toolbar.status-bar::shadow .status-bar-item .status-bar-cou
 ::shadow .toolbar-shadow .toolbar-text {
     color: #626262 !important
 }
+
+@import "app/after";
