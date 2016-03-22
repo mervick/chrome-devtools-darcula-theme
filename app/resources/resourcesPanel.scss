@@ -1,0 +1,428 @@
+@import "../__mixins";
+
+/*
+ * Copyright (C) 2006, 2007, 2008 Apple Inc.  All rights reserved.
+ * Copyright (C) 2009 Anthony Ricaud <rik@webkit.org>
+ *
+ * Redistribution and use in source and binary forms, with or without
+ * modification, are permitted provided that the following conditions
+ * are met:
+ *
+ * 1.  Redistributions of source code must retain the above copyright
+ *     notice, this list of conditions and the following disclaimer.
+ * 2.  Redistributions in binary form must reproduce the above copyright
+ *     notice, this list of conditions and the following disclaimer in the
+ *     documentation and/or other materials provided with the distribution.
+ * 3.  Neither the name of Apple Computer, Inc. ("Apple") nor the names of
+ *     its contributors may be used to endorse or promote products derived
+ *     from this software without specific prior written permission.
+ *
+ * THIS SOFTWARE IS PROVIDED BY APPLE AND ITS CONTRIBUTORS "AS IS" AND ANY
+ * EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+ * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+ * DISCLAIMED. IN NO EVENT SHALL APPLE OR ITS CONTRIBUTORS BE LIABLE FOR ANY
+ * DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+ * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+ * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
+ * ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+ * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
+ * THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ */
+
+.outline-disclosure li.parent::before, .outline-disclosure li.parent.expanded::before {
+    background-color: #8c8c8c !important;
+    background-image: none !important;
+    -webkit-mask-image: url(Images/toolbarButtonGlyphs.png) !important;
+    -webkit-mask-repeat: no-repeat !important;
+    color: transparent !important;
+    opacity: 1 !important;
+}
+
+.resources.panel .sidebar {
+    padding-left: 20px!important;
+    z-index: 10!important;
+    display: block;
+}
+
+.resources.panel .sidebar li {
+    height: 38px!important;
+    white-space: nowrap!important;
+    //padding-top: 10px!important;
+    line-height: 38px!important;
+}
+
+.resources.panel .sidebar li.selected {
+    color: white;
+}
+
+.resources.panel .sidebar li.selected .selection {
+    background-color: rgb(160, 160, 160);
+    border-top: 10px solid #979797!important;
+    height: 38px!important;
+}
+//
+//.resources.panel .sidebar :focus li.selected .selection {
+//    background-color: rgb(56, 121, 217);
+//    border-top: 1px solid rgb(68, 128, 200);
+//}
+//
+.resources.panel .sidebar .icon {
+    width: 16px;
+    height: 16px;
+    position: relative;
+    top: 3px!important;
+    margin-top: -3px!important;
+    display: inline-block!important;
+}
+//
+.resources.panel .base-storage-tree-element-title {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-left: 10px;
+    display: inline!important;
+}
+//
+//.resources-toolbar {
+//    border-top: 1px solid #ccc;
+//    background-color: #eee;
+//}
+//
+//li.selected .base-storage-tree-element-subtitle {
+//    color: white;
+//}
+//
+//    .base-storage-tree-element-subtitle {
+//        padding-left: 20px!important;
+//        color: rgb(80, 80, 80)!important;
+//        text-shadow: none!important;
+//    }
+//
+.resources.panel .status {
+    float: right;
+    height: 24px!important;
+    margin-top: 12px!important;
+    margin-left: 24px!important;
+    line-height: 1em!important;
+}
+//
+//.storage-view {
+//    display: flex;
+//    overflow: hidden;
+//}
+//
+//.storage-view {
+//    overflow: hidden;
+//}
+//
+//.storage-view .data-grid:not(.inline) {
+//    border: none;
+//    flex: auto;
+//}
+//
+//.storage-view .storage-table-error {
+//    color: rgb(66%, 33%, 33%);
+//    font-size: 24px;
+//    font-weight: bold;
+//    padding: 10px;
+//    display: flex;
+//    align-items: center;
+//    justify-content: center;
+//}
+//
+//.storage-view.query {
+//    padding: 2px 0;
+//    overflow-y: overlay;
+//    overflow-x: hidden;
+//}
+//
+//.database-query-prompt {
+//    position: relative;
+//    padding: 1px 22px 1px 24px;
+//    min-height: 16px;
+//    white-space: pre-wrap;
+//    -webkit-user-modify: read-write-plaintext-only;
+//    -webkit-user-select: text;
+//}
+//
+//.database-user-query::before,
+//.database-query-prompt::before,
+//.database-query-result::before {
+//    position: absolute;
+//    display: block;
+//    content: "";
+//    left: 7px;
+//    top: 0.8em;
+//    width: 10px;
+//    height: 10px;
+//    margin-top: -7px;
+//    -webkit-user-select: none;
+//    background-image: url(Images/toolbarButtonGlyphs.png);
+//    background-size: 352px 168px;
+//}
+//
+//@media (-webkit-min-device-pixel-ratio: 1.5) {
+//    .database-user-query::before,
+//    .database-query-prompt::before,
+//    .database-query-result::before {
+//        background-image: url(Images/toolbarButtonGlyphs_2x.png);
+//    }
+//} /* media */
+//
+//.database-query-prompt::before {
+//    background-position: -192px -96px;
+//}
+//
+//.database-user-query {
+//    position: relative;
+//    border-bottom: 1px solid rgb(245, 245, 245);
+//    padding: 1px 22px 1px 24px;
+//    min-height: 16px;
+//    flex-shrink: 0;
+//}
+//
+//.database-user-query::before {
+//    background-position: -192px -107px;
+//}
+//
+//.database-query-text {
+//    color: rgb(0, 128, 255);
+//    -webkit-user-select: text;
+//}
+//
+//.database-query-result {
+//    position: relative;
+//    padding: 1px 22px 1px 24px;
+//    min-height: 16px;
+//    margin-left: -24px;
+//    padding-right: 0;
+//}
+//
+//.database-query-result.error {
+//    color: red;
+//    -webkit-user-select: text;
+//}
+//
+//.database-query-result.error::before {
+//    background-position: -213px -96px;
+//}
+
+// FileTypes
+// script sm-script
+// stylesheet sm-stylesheet
+//XHR: new WebInspector.ResourceType("xhr", "XHR", WebInspector.resourceCategories.XHR, true),
+//Fetch: new WebInspector.ResourceType("fetch", "Fetch", WebInspector.resourceCategories.XHR, true),
+//EventSource: new WebInspector.ResourceType("eventsource", "EventSource", WebInspector.resourceCategories.XHR, true),
+//Script: new WebInspector.ResourceType("script", "Script", WebInspector.resourceCategories.Script, true),
+//Stylesheet: new WebInspector.ResourceType("stylesheet", "Stylesheet", WebInspector.resourceCategories.Stylesheet, true),
+//Image: new WebInspector.ResourceType("image", "Image", WebInspector.resourceCategories.Image, false),
+//Media: new WebInspector.ResourceType("media", "Media", WebInspector.resourceCategories.Media, false),
+//Font: new WebInspector.ResourceType("font", "Font", WebInspector.resourceCategories.Font, false),
+//Document: new WebInspector.ResourceType("document", "Document", WebInspector.resourceCategories.Document, true),
+//TextTrack: new WebInspector.ResourceType("texttrack", "TextTrack", WebInspector.resourceCategories.Other, true),
+//WebSocket: new WebInspector.ResourceType("websocket", "WebSocket", WebInspector.resourceCategories.WebSocket, false),
+//Other: new WebInspector.ResourceType("other", "Other", WebInspector.resourceCategories.Other, false),
+//SourceMapScript: new WebInspector.ResourceType("sm-script", "Script", WebInspector.resourceCategories.Script, false),
+//SourceMapStyleSheet: new WebInspector.ResourceType("sm-stylesheet", "Stylesheet", WebInspector.resourceCategories.Stylesheet, false),
+//Manifest: new WebInspector.ResourceType("manifest", "Manifest", WebInspector.resourceCategories.Manifest, false),
+
+.frame-storage-tree-item .icon {
+    @include image-content("package.png");
+}
+
+.children .frame-storage-tree-item .icon {
+    @include image-content("directory.png");
+}
+
+.resource-sidebar-tree-item {
+    .icon {
+        @include image-content("file.png");
+        background-image: none !important;
+    }
+    &.resources-type-image .icon {
+        @include image-content("image.png");
+    }
+    &.resources-type-document .icon {
+        @include image-content("html.png");
+    }
+    &.resources-type-stylesheet .icon {
+        @include image-content("css.png");
+    }
+    &.resources-type-font .icon {
+        @include image-content("any_type.png");
+    }
+    &.resources-type-script .icon {
+        @include image-content("js.png");
+    }
+    &.resources-type-sm-script .icon {
+        @include image-content("js-min.png");
+    }
+    &.resources-type-xhr .icon {
+        @include image-content("css.png");
+    }
+    &.resources-type-manifest .icon {
+        @include image-content("manifest.png");
+    }
+}
+
+
+//.children.small .resource-sidebar-tree-item .icon {
+//    content: url(Images/resourcePlainIconSmall.png);
+//}
+
+
+
+//.resource-sidebar-tree-item.resources-type-image .icon {
+//    position: relative;
+//    background-image: url(Images/resourcePlainIcon.png);
+//    background-repeat: no-repeat;
+//    content: "";
+//}
+
+//.resources-type-image .image-resource-icon-preview {
+//    position: absolute;
+//    margin: auto;
+//    top: 3px;
+//    bottom: 4px;
+//    left: 5px;
+//    right: 5px;
+//    max-width: 18px;
+//    max-height: 21px;
+//    min-width: 1px;
+//    min-height: 1px;
+//}
+
+//.children.small .resource-sidebar-tree-item.resources-type-image .icon {
+//    background-image: url(Images/resourcePlainIconSmall.png);
+//    content: "";
+//}
+
+//.children.small .resources-type-image .image-resource-icon-preview {
+//    top: 2px;
+//    bottom: 1px;
+//    left: 3px;
+//    right: 3px;
+//    max-width: 8px;
+//    max-height: 11px;
+//    overflow: hidden;
+//}
+
+
+
+
+//.resource-sidebar-tree-item.resources-type-document .icon {
+//    content: url(Images/resourceDocumentIcon.png);
+//}
+//
+//.children.small .resource-sidebar-tree-item.resources-type-document .icon {
+//    content: url(Images/resourceDocumentIconSmall.png);
+//}
+//
+//.resource-sidebar-tree-item.resources-type-stylesheet .icon {
+//    content: url(Images/resourceCSSIcon.png);
+//}
+//
+//.children.small .resource-sidebar-tree-item.resources-type-stylesheet .icon {
+//    content: url(Images/resourceDocumentIconSmall.png);
+//}
+//
+//.resource-sidebar-tree-item.resources-type-image .icon {
+//    position: relative;
+//    background-image: url(Images/resourcePlainIcon.png);
+//    background-repeat: no-repeat;
+//    content: "";
+//}
+//
+//.children.small .resource-sidebar-tree-item.resources-type-image .icon {
+//    background-image: url(Images/resourcePlainIconSmall.png);
+//    content: "";
+//}
+//
+//.resource-sidebar-tree-item.resources-type-font .icon {
+//    content: url(Images/resourcePlainIcon.png);
+//}
+//
+//.children.small .resource-sidebar-tree-item.resources-type-font .icon {
+//    content: url(Images/resourcePlainIconSmall.png);
+//}
+//
+//.resource-sidebar-tree-item.resources-type-script .icon {
+//    content: url(Images/resourceJSIcon.png);
+//}
+//
+//.children.small .resource-sidebar-tree-item.resources-type-script .icon {
+//    content: url(Images/resourceDocumentIconSmall.png);
+//}
+//
+//.resource-sidebar-tree-item.resources-type-xhr .icon {
+//    content: url(Images/resourcePlainIcon.png);
+//}
+//
+//.children.small .resource-sidebar-tree-item.resources-type-xhr .icon {
+//    content: url(Images/resourceDocumentIconSmall.png);
+//}
+
+
+
+
+
+
+
+.database-storage-tree-item .icon {
+    @include image-content("db.png");
+    content: url(Images/database.png);
+}
+
+.database-table-storage-tree-item .icon {
+    @include image-content("DataTables.png");
+}
+
+
+.indexed-db-storage-tree-item .icon {
+    @include image-content("db.png");
+}
+
+.indexed-db-object-store-storage-tree-item .icon {
+    @include image-content("DataTables.png");
+}
+
+.indexed-db-index-storage-tree-item .icon {
+    @include image-content("packagesTab.png");
+}
+
+.service-worker-cache-tree-item .icon {
+    @include image-content("DataSource.png");
+}
+
+.service-worker-cache-storage-tree-item .icon {
+    @include image-content("projectStructure_dark.png");
+}
+
+.service-workers-tree-item .icon {
+    @include image-content("threads.png");
+}
+
+.-theme-with-dark-background .service-workers-tree-item .icon {
+    -webkit-filter: invert(0%)!important;
+    //-webkit-filter: invert(70%);
+}
+
+.domstorage-storage-tree-item.local-storage .icon {
+    @include image-content("DataTables.png");
+}
+
+.domstorage-storage-tree-item.session-storage .icon {
+    @include image-content("DataTables.png");
+}
+
+.cookie-storage-tree-item .icon {
+    @include image-content("messageHistory_dark.png");
+}
+
+.application-cache-storage-tree-item .icon {
+    @include image-content("resourcesRoot.png");
+}
+
+.file-system-storage-tree-item .icon {
+    @include image-content("Module.png");
+    //@include image-content("webFolder.png");
+}
