@@ -1,0 +1,22 @@
+.outline-disclosure li.parent::before {
+    -webkit-mask-position: -4px -96px !important
+}
+
+.outline-disclosure li.parent.expanded::before {
+    -webkit-mask-position: -20px -96px !important
+}
+
+.outline-disclosure li.parent::before,
+.outline-disclosure li.parent.expanded::before {
+    background-color: #8c8c8c !important;
+    background-image: none !important;
+    -webkit-mask-image: $Images_toolbarButtonGlyphs !important;
+    -webkit-mask-repeat: no-repeat !important;
+    color: rgba(0, 0, 0, 0) !important;
+    opacity: 1 !important
+}
+
+.request-headers-view .outline-disclosure li.parent::before,
+.request-headers-view .outline-disclosure li.parent.expanded::before {
+    margin: 0 4px !important
+}
