@@ -1,6 +1,6 @@
 $veryImportant: !important !important;
 
-$Images_toolbarButtonGlyphs_bundled: url(chrome-devtools://devtools/bundled/Images/toolbarButtonGlyphs.png);
+//$Images_toolbarButtonGlyphs_bundled: url(chrome-devtools://devtools/bundled/Images/toolbarButtonGlyphs.png);
 $Images_toolbarButtonGlyphs: url(Images/toolbarButtonGlyphs.png);
 $Images_paneAddButtons: url(Images/paneAddButtons.png);
 $Images_paneRefreshButtons: url(Images/paneRefreshButtons.png);
@@ -25,3 +25,26 @@ $Images_navigationControls_2x: url(Images/navigationControls_2x.png);
 
 $selection-fg: #364c3b;
 $selection-fg: #214283;
+$selection-color: #e6e6e6;
+$selection-border-color: #56795e;
+$selection-border-color: #214283;
+
+$hover-fg: #2f2f2f;
+$hover-color: #ccc;
+
+
+$fg: #3C3F41;
+$fg-hovered: #353739;
+$fg-selected: #2d2f30;
+$fg-dark: #2B2B2B;
+$fg-darkness: #313335;
+
+$border-color-lite: #555555;
+$border-color-dark: #555555;
+
+$search-fg: #425f44;
+$search-fg-selected: #214283;
+$search-border: #56ac48;
+$search-border-selected: #bbbbbb;
+
+$selected-icon-color: #6CBCE8;
