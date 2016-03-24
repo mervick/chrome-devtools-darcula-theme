@@ -1,3 +1,81 @@
+
+::shadow .elements-disclosure ol li.parent::before {
+    -webkit-mask-position: -4px -96px !important
+}
+
+::shadow .elements-disclosure ol li.parent.expanded::before {
+    -webkit-mask-position: -20px -96px !important
+}
+
+::shadow .elements-disclosure ol li.parent::before,
+::shadow .elements-disclosure ol li.parent.expanded::before {
+    background-color: #8c8c8c !important;
+    background-image: none !important;
+    -webkit-mask-image: $Images_toolbarButtonGlyphs !important;
+    -webkit-mask-repeat: no-repeat !important;
+    color: rgba(0, 0, 0, 0) !important;
+    opacity: 1 !important
+}
+
+.styles-section.matched-styles .style-properties li.parent .expand-element {
+    -webkit-mask-position: -4px -96px !important
+}
+
+.styles-section.matched-styles .style-properties li.parent.expanded .expand-element {
+    -webkit-mask-position: -20px -96px !important
+}
+
+.styles-section.matched-styles .style-properties li.parent .expand-element,
+.styles-section.matched-styles .style-properties li.parent.expanded .expand-element {
+    background-color: #8c8c8c !important;
+    background-image: none !important;
+    -webkit-mask-image: $Images_toolbarButtonGlyphs !important;
+    -webkit-mask-repeat: no-repeat !important;
+    color: rgba(0, 0, 0, 0) !important;
+    opacity: 1 !important
+}
+
+.sidebar-pane-stack .sidebar-pane-title::before {
+    -webkit-mask-position: -4px -96px !important
+}
+
+.sidebar-pane-stack .sidebar-pane-title.expanded::before {
+    -webkit-mask-position: -20px -96px !important
+}
+
+.sidebar-pane-stack .sidebar-pane-title::before,
+.sidebar-pane-stack .sidebar-pane-title.expanded::before {
+    background-color: #8c8c8c !important;
+    background-image: none !important;
+    -webkit-mask-image: $Images_toolbarButtonGlyphs !important;
+    -webkit-mask-repeat: no-repeat !important;
+    color: rgba(0, 0, 0, 0) !important;
+    opacity: 1 !important
+}
+
+.event-listener-breakpoints li.parent::before {
+    -webkit-mask-position: -4px -96px !important
+}
+
+.event-listener-breakpoints li.parent.expanded::before {
+    -webkit-mask-position: -20px -96px !important
+}
+
+.event-listener-breakpoints li.parent::before,
+.event-listener-breakpoints li.parent.expanded::before {
+    background-color: #8c8c8c !important;
+    background-image: none !important;
+    -webkit-mask-image: $Images_toolbarButtonGlyphs !important;
+    -webkit-mask-repeat: no-repeat !important;
+    color: rgba(0, 0, 0, 0) !important;
+    opacity: 1 !important
+}
+
+.event-listener-breakpoints li.parent::before,
+.event-listener-breakpoints li.parent.expanded::before {
+    -webkit-mask-position: -4px -94px !important
+}
+
 .outline-disclosure li.parent::before {
     -webkit-mask-position: -4px -96px !important
 }
@@ -19,4 +97,103 @@
 .request-headers-view .outline-disclosure li.parent::before,
 .request-headers-view .outline-disclosure li.parent.expanded::before {
     margin: 0 4px !important
+}
+
+
+::shadow #search-results-pane-file-based .parent::before {
+    -webkit-mask-position: -4px -96px !important
+}
+
+::shadow #search-results-pane-file-based .parent.expanded::before {
+    -webkit-mask-position: -20px -96px !important
+}
+
+::shadow #search-results-pane-file-based .parent::before,
+::shadow #search-results-pane-file-based .parent.expanded::before {
+    background-color: #8c8c8c !important;
+    background-image: none !important;
+    -webkit-mask-image: $Images_toolbarButtonGlyphs !important;
+    -webkit-mask-repeat: no-repeat !important;
+    color: rgba(0, 0, 0, 0) !important;
+    opacity: 1 !important;
+    margin-right: 2px !important
+}
+
+::shadow #search-results-pane-file-based .parent::before {
+    -webkit-mask-position: -4px -93px !important
+}
+
+::shadow #search-results-pane-file-based .parent.expanded::before {
+    -webkit-mask-position: -20px -93px !important
+}
+
+::shadow .tree-outline li::before {
+    -webkit-mask-position: -4px -96px !important
+}
+
+::shadow .tree-outline li.expanded::before {
+    -webkit-mask-position: -20px -96px !important
+}
+
+::shadow .tree-outline li::before,
+::shadow .tree-outline li.expanded::before {
+    background-color: #8c8c8c !important;
+    background-image: none !important;
+    -webkit-mask-image: $Images_toolbarButtonGlyphs !important;
+    -webkit-mask-repeat: no-repeat !important;
+    color: rgba(0, 0, 0, 0) !important;
+    opacity: 1 !important
+}
+
+::shadow .tree-outline li:not(.parent)::before {
+    background-color: transparent !important
+}
+
+.timeline-tree-item .timeline-tree-item-expand-arrow.parent {
+    -webkit-mask-position: -4px -96px !important
+}
+
+.timeline-tree-item .timeline-tree-item-expand-arrow.parent.expanded {
+    -webkit-mask-position: -20px -96px !important
+}
+
+.timeline-tree-item .timeline-tree-item-expand-arrow.parent,
+.timeline-tree-item .timeline-tree-item-expand-arrow.parent.expanded {
+    background-color: #8c8c8c !important;
+    background-image: none !important;
+    -webkit-mask-image: $Images_toolbarButtonGlyphs !important;
+    -webkit-mask-repeat: no-repeat !important;
+    color: rgba(0, 0, 0, 0) !important;
+    opacity: 1 !important
+}
+
+.timeline-expandable.timeline-expandable-expanded .timeline-expandable-arrow {
+    -webkit-mask-position: -20px -96px !important
+}
+
+.timeline-expandable .timeline-expandable-arrow {
+    background-color: #8c8c8c !important;
+    background-image: none !important;
+    -webkit-mask-image: $Images_toolbarButtonGlyphs !important;
+    -webkit-mask-repeat: no-repeat !important;
+    color: rgba(0, 0, 0, 0) !important;
+    opacity: 1 !important
+}
+::shadow .status-bar-select-arrow {
+    background-color: #8c8c8c !important;
+    background-image: none !important;
+    -webkit-mask-image: $Images_toolbarButtonGlyphs !important;
+    -webkit-mask-repeat: no-repeat !important;
+    color: rgba(0, 0, 0, 0) !important;
+    opacity: 1 !important;
+    -webkit-mask-position: -20px -96px !important
+}
+
+.toolbar::shadow .toolbar-select-arrow {
+    position: relative !important;
+    right: 10px !important;
+    background-image: none !important;
+    -webkit-mask-image: $Images_toolbarButtonGlyphs !important;
+    -webkit-mask-position: -20px -96px !important;
+    background-color: #8c8c8c !important
 }
