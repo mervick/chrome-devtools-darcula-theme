@@ -1,0 +1,8 @@
+
+@mixin image-content($url) {
+    content: inline_image($url) !important;
+}
+
+@mixin image-bg($url) {
+    background-image: inline_image($url) !important;
+}
