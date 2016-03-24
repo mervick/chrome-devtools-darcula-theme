@@ -1,16 +1,11 @@
 @import "compass";
 
 @import "__variables";
-@import "scrollVars";
 
-.CodeMirror,
-::shadow .CodeMirror,
-::shadow ::shadow .CodeMirror,
-.vbox > .CodeMirror,
-#sources-panel-sources-view > .vbox > .vbox .vbox,
-#sources-panel-sources-view > .vbox > .vbox ::shadow .vbox {
+.vbox > .CodeMirror {
     background-color: $fg-dark !important ;
 }
+
 .CodeMirror .CodeMirror-scroll,
 .CodeMirror .CodeMirror-vscrollbar,
 .CodeMirror .CodeMirror-hscrollbar {
@@ -35,28 +30,6 @@
 }
 
 .CodeMirror-scrollbar-filler {
-    background-color: transparent!important;
-}
-
-.custom-popup-horizontal-scroll ::-webkit-scrollbar,
-.custom-popup-vertical-scroll ::-webkit-scrollbar,
-::shadow .custom-popup-horizontal-scroll ::-webkit-scrollbar,
-::shadow .custom-popup-vertical-scroll ::-webkit-scrollbar {
-    background: none !important;
-}
-
-#{$shadow_custom-popup-scroll_scrollbar-track} {
-    -webkit-box-shadow: none !important;
-    background-image: none !important;
-}
-
-#{$webkit-scrollbar-track_horizontal} {
-    -webkit-box-shadow: none !important;
-    background-color: transparent!important;
-}
-
-#{$webkit-scrollbar-track_vertical} {
-    -webkit-box-shadow: none !important;
     background-color: transparent!important;
 }
 
@@ -90,38 +63,4 @@
             background-image: linear-gradient(to right, #6f6f6f 0%, #656565 100%) !important;
         }
     }
-}
-
-#{$webkit-scrollbar-track} {
-    -webkit-box-shadow: none !important;
-    background-image: none !important;
-}
-
-.custom-popup-horizontal-scroll ::-webkit-scrollbar-thumb,
-.custom-popup-horizontal-scroll ::-webkit-scrollbar-thumb:horizontal:active,
-.custom-popup-horizontal-scroll ::-webkit-scrollbar-thumb:horizontal:hover,
-.custom-popup-horizontal-scroll ::-webkit-scrollbar-track-piece:horizontal:decrement,
-.custom-popup-horizontal-scroll ::-webkit-scrollbar-track-piece:horizontal:increment,
-.custom-popup-vertical-scroll ::-webkit-scrollbar-thumb:vertical:active,
-.custom-popup-vertical-scroll ::-webkit-scrollbar-thumb:vertical:hover,
-.custom-popup-vertical-scroll ::-webkit-scrollbar-track-piece:vertical:decrement,
-.custom-popup-vertical-scroll ::-webkit-scrollbar-track-piece:vertical:increment,
-::shadow .custom-popup-horizontal-scroll ::-webkit-scrollbar-thumb:horizontal:active,
-::shadow .custom-popup-horizontal-scroll ::-webkit-scrollbar-thumb:horizontal:hover,
-::shadow .custom-popup-horizontal-scroll ::-webkit-scrollbar-track-piece:horizontal:decrement,
-::shadow .custom-popup-horizontal-scroll ::-webkit-scrollbar-track-piece:horizontal:increment,
-::shadow .custom-popup-vertical-scroll ::-webkit-scrollbar-thumb:vertical:active,
-::shadow .custom-popup-vertical-scroll ::-webkit-scrollbar-thumb:vertical:hover,
-::shadow .custom-popup-vertical-scroll ::-webkit-scrollbar-track-piece:vertical:decrement,
-::shadow .custom-popup-vertical-scroll ::-webkit-scrollbar-track-piece:vertical:increment,
-::shadow .custom-popup-horizontal-scroll ::-webkit-scrollbar-thumb {
-    -webkit-border-image: none !important;
-}
-
-#{$shadow_scrollbar-track_horizontal} {
-    -webkit-box-shadow: none !important;
-}
-
-#{$shadow_scrollbar-track_vertical} {
-    -webkit-box-shadow: none !important;
 }
