@@ -1,0 +1,135 @@
+@import "__variables";
+@import "__mixins";
+
+.panel.sources {
+
+    .navigator-container,
+    .navigator > ol,
+    ::shadow .tabbed-pane-content {
+        background-color: $fg !important;
+        z-index: 10!important;
+    }
+
+    .navigator {
+        $height: 20px;
+
+        li,
+        li .selection,
+        li.hovered .selection,
+        li.selected .selection {
+            height: $height !important;
+        }
+
+        .base-navigator-tree-element-title {
+            color: #ccc !important;
+            top: 0 !important;
+            line-height: $height !important;
+        }
+
+        .selected .base-navigator-tree-element-title {
+            color: #e6e6e6 !important;
+            text-shadow: none !important;
+            line-height: $height !important;
+        }
+
+        li {
+            color: #ccc !important
+        }
+
+        .outline-disclosure li.selected .selection,
+        .outline-disclosure ol:focus li.selected .selection {
+            background: $selection-fg !important;
+            color: $selection-color !important;
+            margin-top: -1px !important;
+            text-shadow: none !important
+        }
+
+        .outline-disclosure li:hover:not(.selected) .selection,
+        .outline-disclosure li.hovered:not(.selected) .selection {
+            display: block !important;
+            background: $hover-fg !important;
+            color: $hover-color !important;
+            margin-top: -1px !important;
+            border-radius: 0 !important
+        }
+
+        .icon {
+            float: left;
+            width: 16px;
+            height: 16px;
+            position: relative;
+            top: 4px!important;
+            margin-top: -3px!important;
+            display: inline-block!important;
+            margin-left: 4px!important;
+            margin-right: 2px;
+            @include image-content("file.png");
+            background-image: none !important;
+        }
+        .navigator-domain-tree-item .icon {
+            @include image-content("web_app.png");
+            opacity: 1!important;
+        }
+        .navigator-folder-tree-item .icon,
+        .children .navigator-domain-tree-item .icon {
+            @include image-content("directory.png");
+            opacity: 1!important;
+        }
+        .navigator-image-tree-item .icon {
+            @include image-content("image.png");
+        }
+        .navigator-document-tree-item .icon {
+            @include image-content("html.png");
+        }
+        .navigator-stylesheet-tree-item .icon {
+            @include image-content("css.png");
+        }
+        .navigator-font-xhr-item .icon,
+        .navigator-font-tree-item .icon {
+            @include image-content("any_type.png");
+        }
+        .navigator-script-tree-item .icon {
+            @include image-content("js.png");
+        }
+        .navigator-sm-script-tree-item .icon {
+            @include image-content("js-min.png");
+        }
+        .manifest-script-tree-item .icon {
+            @include image-content("manifest.png");
+        }
+    }
+
+    .sources-toolbar {
+        .toolbar-shadow,
+        ::shadow .toolbar-shadow {
+            padding-left: 3px;
+            .toolbar-item {
+                &.format-toolbar-item {
+                    height: 23px !important;
+                    width: 25px !important;
+                    margin-right: 1px !important;
+                    > .glyph.toolbar-button-theme {
+                        left: 0;
+                        width: 25px;
+                        height: 23px;
+                        background-color: transparent !important;
+                        border-radius: 3px;
+                        -webkit-mask-image: none;
+                        background-position: center center;
+                        background-repeat: no-repeat;
+                    }
+                    &.hover > .glyph.toolbar-button-theme {
+                        background-color: #5b5d5f !important;
+                        border: 1px solid #7a8084;
+                    }
+                }
+                &.format-toolbar-item {
+                    > .glyph.toolbar-button-theme {
+                        @include image-bg("brackets.png");
+                    }
+                }
+            }
+        }
+    }
+}
+
