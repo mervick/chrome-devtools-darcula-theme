@@ -1,0 +1,59 @@
+@import "__variables";
+
+
+.data-grid {
+    border: 1px solid #151515 !important;
+    background-color: transparent !important;
+    background-image: none !important
+}
+
+.data-grid th,
+.data-grid .data {
+    background: none !important;
+    border-left: 1px solid #3c3c3c !important
+}
+
+.data-grid .header {
+    background: #444 !important
+}
+
+.data-grid .header th {
+    color: #89f5a2 !important
+}
+
+.data-grid .header .key-column,
+.data-grid .header .value-column {
+    border: none !important
+}
+
+.data-grid td {
+    border-left: 1px solid #282828 !important
+}
+
+.data-grid .data-container a {
+    text-decoration: none;
+    color: #e3b959 !important
+}
+
+.data-grid .data-container tr:nth-child(odd) {
+    background-color: #222 !important
+}
+
+.data-grid .data-container tr:nth-child(even) {
+    background-color: #272727 !important
+}
+
+.data-grid .data-container tr:not(.selected):not(.filler):hover {
+    background-color: #2f2f2f !important;
+    outline: 1px solid #414141 !important
+}
+
+.data-grid .data-container tr.selected {
+    background-color: $selection-fg !important;
+    outline: 1px solid $selection-border-color !important
+}
+
+.data-grid .data-container tr .editing * {
+    color: #FFF !important;
+    background-color: #222 !important
+}
