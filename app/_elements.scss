@@ -1,0 +1,15 @@
+@import "__variables";
+
+.elements-content {
+    background-color: $fg;
+}
+
+::shadow .source-code .CodeMirror {
+    outline: none !important;
+    box-shadow: none !important;
+    margin: 0;
+    padding: 0;
+    color: $color !important;
+    background: $fg-dark!important;
+    border: 1px solid $border-color!important;
+}
