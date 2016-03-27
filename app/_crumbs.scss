@@ -1,0 +1,108 @@
+@import "__variables";
+
+
+#elements-crumbs {
+    $height: 25px;
+    flex: 0 0 $height !important;
+    padding: 3px !important;
+    height: $height !important;
+    background: $fg-darkness !important;
+    border-top: 1px solid $border-color !important;
+
+    ::shadow .crumbs {
+        text-shadow: none !important;
+        color: #ccc !important;
+
+        .crumb {
+            -webkit-border-image: none !important;
+            border-left: 0!important;
+            border-right: 0!important;
+            padding: 0 6px !important;
+            margin: 0 2px 0 1px !important;
+            line-height: 18px !important;
+            background: #5a7778;
+
+            @mixin crumb-colors($color) {
+                background-color: $color;
+                &:hover {
+                    background-color: scale-lightness($color, 11);
+                }
+            }
+            &:nth-last-child(6n-5) {
+                @include crumb-colors(#745d5f);
+            }
+            &:nth-last-child(6n-4) {
+                @include crumb-colors(#74775f);
+            }
+            &:nth-last-child(6n-3) {
+                @include crumb-colors(#5a775f);
+            }
+            &:nth-last-child(6n-2) {
+                @include crumb-colors(#5a7778);
+            }
+            &:nth-last-child(6n-1) {
+                @include crumb-colors(#636d78);
+            }
+            &:nth-last-child(6n) {
+                @include crumb-colors(#745d78);
+            }
+
+            &.selected {
+                //background-color: #245A82 !important;
+                //background-color: #214283!important;
+                background-color: #705743 !important;
+                text-shadow: none !important;
+                color: #f8f8f8 !important;
+                cursor: default
+            }
+        }
+    }
+}
+
+//#elements-crumbs ::shadow .crumbs {
+//    text-shadow: none !important;
+//    color: #ccc !important
+//}
+//
+//#elements-crumbs ::shadow .crumbs
+//
+//#elements-crumbs ::shadow .crumbs .crumb:hover {
+//    color: #f8f8f8 !important;
+//    background-color: rgba(0, 0, 0, 0) !important
+//}
+
+//.material #elements-crumbs {
+//    background: #373737 !important;
+//    border-top: 1px solid #2f2f2f !important
+//}
+//
+//.material #elements-crumbs ::shadow .crumbs {
+//    text-shadow: none !important;
+//    color: #ccc !important
+//}
+//
+//.material #elements-crumbs ::shadow .crumbs .crumb {
+//    -webkit-border-image: none !important;
+//    border-left: 1px solid #626262 !important;
+//    border-right: 1px solid #484848 !important;
+//    padding: 0 10px !important;
+//    margin: 0 !important;
+//    line-height: 18px !important;
+//    color: #ccc !important
+//}
+//
+//.material #elements-crumbs ::shadow .crumbs .crumb:first-child {
+//    border-left: 1px solid rgba(0, 0, 0, 0) !important
+//}
+//
+//.material #elements-crumbs ::shadow .crumbs .crumb:hover {
+//    color: #f8f8f8 !important;
+//    background-color: rgba(0, 0, 0, 0) !important
+//}
+//
+//.material #elements-crumbs ::shadow .crumbs .crumb.selected {
+//    background-color: #364c3b !important;
+//    text-shadow: none !important;
+//    color: #f8f8f8 !important;
+//    cursor: default
+//}
