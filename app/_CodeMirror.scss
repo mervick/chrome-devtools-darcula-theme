@@ -8,7 +8,7 @@
 }
 
 .CodeMirror .CodeMirror-activeline-background {
-    background-color: $fg!important;
+    background-color: $fg-current-line!important;
 }
 
 .CodeMirror-gutter-elt,
