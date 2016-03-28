@@ -1,0 +1,54 @@
+@import "__variables";
+
+
+
+::shadow .tree-outline li.hovered:not(.selected) .selection {
+    background-color: $fg-darkness !important;
+    box-shadow: none!important;
+}
+
+::shadow .tree-outline li.selected .selection {
+    background-color: $selection-fg !important;
+    box-shadow: none!important;
+    //box-shadow: inset 0 1px 0 0 $selection-border-color, inset 0 -1px 0 0 $selection-border-color
+}
+
+::shadow .object-properties-section-name,
+.console-view-object-properties-section span {
+    color: #7c7c7c !important
+}
+
+.panel.elements ::shadow .outline-disclosure ol:focus li.selected .selection,
+.panel.console ::shadow .outline-disclosure ol:focus li.selected .selection,
+.panel.elements ::shadow .elements-disclosure ol:focus li.selected .selection,
+.panel.console ::shadow .elements-disclosure ol:focus li.selected .selection,
+.panel.elements ::shadow .outline-disclosure li.selected .selection,
+.panel.console ::shadow .outline-disclosure li.selected .selection,
+.panel.elements ::shadow .elements-disclosure li.selected .selection,
+.panel.console ::shadow .elements-disclosure li.selected .selection {
+    outline: 1px solid $selection-border-color !important;
+    background-color: $selection-fg !important
+}
+
+.panel.elements ::shadow .outline-disclosure li.hovered:not(.selected) .selection,
+.panel.console ::shadow .outline-disclosure li.hovered:not(.selected) .selection,
+.panel.elements ::shadow .elements-disclosure li.hovered:not(.selected) .selection,
+.panel.console ::shadow .elements-disclosure li.hovered:not(.selected) .selection {
+    border-radius: 0 !important;
+    left: 0!important;
+    right: 0!important;
+    outline: 1px solid $fg-darkness !important;
+    background-color: $fg-darkness !important
+}
+
+#timeline-graphs .timeline-graph-side.hovered,
+.timeline-records-list .timeline-tree-item.hovered:not(.selected) {
+    background-color: rgba(47, 47, 47, 0.5) !important;
+    outline: 1px solid #484848 !important
+}
+
+#timeline-graphs .timeline-graph-side.selected,
+.timeline-records-list .timeline-tree-item.selected {
+    background-color: rgba(137, 245, 162, 0.2) !important;
+    outline: 1px solid #56795e !important
+}
