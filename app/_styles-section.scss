@@ -4,39 +4,34 @@
     padding: 4px 0 !important;
     margin: 0 10px;
     border-top: 1px solid #3c3c3c !important;
-    border-bottom: none !important
-}
+    border-bottom: none !important;
+    &:first-child {
+        border-top: none !important
+    }
+    &.read-only:not(.computed-style) {
+        background-color: #2f2f2f !important;
+        margin: 0;
+        padding-left: 10px !important;
+        padding-right: 10px !important
+    }
+    .value {
+        color: #ccc !important
+    }
+    .child-editing, .header .subtitle {
+        color: #999 !important
+    }
+    .overloaded, .inactive, .disabled, .not-parsed-ok {
+        opacity: .5 !important
+    }
+    .body, .monospace {
+        color: #ccc !important
+    }
 
-.styles-section:first-child {
-    border-top: none !important
-}
-
-.styles-section.read-only:not(.computed-style) {
-    background-color: #2f2f2f !important;
-    margin: 0;
-    padding-left: 10px !important;
-    padding-right: 10px !important
-}
-
-.styles-section .value {
-    color: #ccc !important
-}
-
-.styles-section .child-editing,
-.styles-section .header .subtitle {
-    color: #999 !important
-}
-
-.styles-section .overloaded,
-.styles-section .inactive,
-.styles-section .disabled,
-.styles-section .not-parsed-ok {
-    opacity: .5 !important
-}
-
-.sidebar-pane .body,
-.sidebar-pane .monospace {
-    color: #ccc !important
+    .style-properties li.filter-match,
+    .simple-selector.filter-match {
+        background-color: $search-fg !important;
+        box-shadow: 0 0 0 1px $search-border !important;
+    }
 }
 
 .sidebar-pane .section.expanded > .header {
@@ -180,19 +175,6 @@
 
 ::shadow .list-item:hover {
     background-color: #2f2f2f !important
-}
-
-.webkit-css-property,
-.styles-section .properties > li .webkit-css-property {
-    color: #6aedff !important;
-    font-weight: 400
-}
-
-.styles-section .style-properties li.filter-match,
-.styles-section .simple-selector.filter-match {
-    background-color: $selection-fg !important;
-    box-shadow: 0 0 0 1px $selection-border-color !important;
-    border-radius: 2px
 }
 
 .styles-element-classes-pane {
