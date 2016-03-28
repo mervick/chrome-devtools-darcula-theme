@@ -18,19 +18,25 @@
         color: #ccc !important
     }
     .child-editing, .header .subtitle {
-        color: #999 !important
+        color: #999 !important;
     }
     .overloaded, .inactive, .disabled, .not-parsed-ok {
         opacity: .5 !important
     }
     .body, .monospace {
-        color: #ccc !important
+        color: #ccc !important;
     }
 
     .style-properties li.filter-match,
     .simple-selector.filter-match {
         background-color: $search-fg !important;
         box-shadow: 0 0 0 1px $search-border !important;
+    }
+
+    .selector + span:not(.selector-matches),
+    .styles-selector span:last-child:not(.selector-matches),
+    .style-properties.monospace + div {
+        color: #bbb !important;
     }
 }
 
