@@ -1,6 +1,5 @@
 $veryImportant: !important !important;
 
-//$Images_toolbarButtonGlyphs_bundled: url(chrome-devtools://devtools/bundled/Images/toolbarButtonGlyphs.png);
 $Images_toolbarButtonGlyphs: url(Images/toolbarButtonGlyphs.png);
 $Images_paneAddButtons: url(Images/paneAddButtons.png);
 $Images_paneRefreshButtons: url(Images/paneRefreshButtons.png);
@@ -14,18 +13,13 @@ $Images_navigationControls_2x: url(Images/navigationControls_2x.png);
     -webkit-mask-image: -webkit-image-set($content);
 }
 
-%elements-hover-dom-tree {
+@mixin elements-hover-dom-tree() {
     outline: 1px solid #363636 !important;
     //background-color: rgba(0, 0, 0, 0.1);
 }
 
-%elements-hover-dom-pseudo {
-    color: #a6371a !important
-}
-
 $color: #ccc;
 
-$selection-fg: #364c3b;
 $selection-fg: #214283;
 $selection-color: #e6e6e6;
 $selection-border-color: #56795e;
@@ -40,6 +34,7 @@ $fg-hovered: #353739;
 $fg-selected: #2d2f30;
 $fg-dark: #2B2B2B;
 $fg-darkness: #313335;
+$fg-current-line: #323232;
 
 $border-color: #555555;
 $border-color-lite: #555555;
@@ -51,3 +46,4 @@ $search-border: #56ac48;
 $search-border-selected: #bbbbbb;
 
 $selected-icon-color: #6CBCE8;
+$pseudo-element-color: #a6371a;
