@@ -1,3 +1,5 @@
+@import "__mixins";
+
 $veryImportant: !important !important;
 
 $Images_toolbarButtonGlyphs: url(Images/toolbarButtonGlyphs.png);
@@ -9,20 +11,11 @@ $Images_paneAnimationsButtons: url(Images/paneAnimationsButtons.png);
 $Images_navigationControls: url(Images/navigationControls.png);
 $Images_navigationControls_2x: url(Images/navigationControls_2x.png);
 
-@mixin mask-image-set($content...) {
-    -webkit-mask-image: -webkit-image-set($content);
-}
-
-@mixin elements-hover-dom-tree() {
-    outline: 1px solid #363636 !important;
-    //background-color: rgba(0, 0, 0, 0.1);
-}
-
 $color: #ccc;
 
 $selection-fg: #214283;
 $selection-color: #e6e6e6;
-$selection-border-color: #56795e;
+//$selection-border-color: #56795e;
 $selection-border-color: #214283;
 
 $hover-fg: #2f2f2f;
@@ -31,10 +24,12 @@ $hover-color: #ccc;
 
 $fg: #3C3F41;
 $fg-hovered: #353739;
+$fg-hovered2: #4b4e50;
 $fg-selected: #2d2f30;
 $fg-dark: #2B2B2B;
 $fg-darkness: #313335;
 $fg-current-line: #323232;
+$fg-suggest-box: #3c3f41;
 
 $border-color: #555555;
 $border-color-lite: #555555;
