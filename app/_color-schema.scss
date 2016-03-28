@@ -1,5 +1,16 @@
 @import "__variables";
 
+@include shadow {
+    .cm-css-meta,
+    .cm-css-property,
+    .webkit-css-property {
+        //color: #6aedff !important;
+        //color: #A5C261 !important;
+        color: #7cc24f !important;
+        font-weight: 400;
+    }
+}
+
 .cm-error {
     background: #9d1e15 !important;
     border-radius: 2px !important;
@@ -143,9 +154,6 @@
     font-style: italic
 }
 
-.cm-css-meta {
-    color: #6aedff !important
-}
 
 .cm-css-number {
     color: #ccc !important
@@ -153,10 +161,6 @@
 
 .cm-css-operator {
     color: #ccc !important
-}
-
-.cm-css-property {
-    color: #6aedff !important
 }
 
 .cm-css-qualifier {
@@ -211,9 +215,6 @@
     color: #ccc !important
 }
 
-.webkit-css-property {
-    color: #6aedff !important
-}
 
 .webkit-css-string {
     color: #e3b959 !important
@@ -386,9 +387,7 @@
     font-style: italic
 }
 
-::shadow .cm-css-meta {
-    color: #6aedff !important
-}
+
 
 ::shadow .cm-css-number {
     color: #ccc !important
@@ -396,10 +395,6 @@
 
 ::shadow .cm-css-operator {
     color: #ccc !important
-}
-
-::shadow .cm-css-property {
-    color: #6aedff !important
 }
 
 ::shadow .cm-css-qualifier {
@@ -454,9 +449,7 @@
     color: #ccc !important
 }
 
-::shadow .webkit-css-property {
-    color: #6aedff !important
-}
+
 
 ::shadow .webkit-css-string {
     color: #e3b959 !important
@@ -523,4 +516,12 @@
 
 ::shadow .webkit-html-pseudo-element {
     color: #49a5d2 !important
+}
+
+.font-stats-item {
+    color: #ccc !important
+}
+
+.selector-matches {
+    color: #ff9635 !important
 }
