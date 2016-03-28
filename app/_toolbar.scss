@@ -1,5 +1,142 @@
 @import "__variables";
 
+
+.resources-toolbar,
+::shadow .search-toolbar-summary {
+    background: #373737 !important;
+    border-top: 1px solid #222 !important;
+    color: #ccc !important
+}
+
+.profiles-toolbar {
+    background: #373737 !important;
+    border-bottom: 1px solid #222 !important
+}
+
+#sources-panel-sources-view .sources-toolbar {
+    background: #373737 !important;
+    border-top: 1px solid #222 !important;
+    color: #ccc !important
+}
+
+.filter-combobox-filter .toolbar-item,
+.filter-input-field {
+    background-color: #2f2f2f !important;
+    border-color: #3c3c3c !important;
+    color: #e6e6e6 !important
+}
+
+.filter-combobox-filter .toolbar-item:disabled,
+.filter-input-field:disabled {
+    opacity: .3 $veryImportant
+}
+
+.filter-combobox-filter .toolbar-item:focus,
+.filter-input-field:focus {
+    outline-color: unset $veryImportant
+}
+
+.toolbar .toolbar-controls-left,
+.toolbar .toolbar-controls-right {
+    padding-top: 6px !important;
+    border-bottom: 1px solid #1d1d1d !important;
+    box-shadow: inset 0 1px 0 #626262 !important
+}
+
+.console-view .toolbar,
+.network .toolbar,
+.timeline .toolbar,
+.filter-bar {
+    background: #373737 !important;
+    border-bottom: 1px solid #323232 !important
+}
+
+::shadow .toolbar-item > .glyph,
+::shadow .toolbar-item > .glyph:active,
+::shadow .filter-toolbar-item.toggled-shown .glyph,
+::shadow button.toolbar-item.toggled-on .glyph {
+    background-color: #89f5a2 !important
+}
+
+::shadow .filter-toolbar-item.toggled-shown {
+    background-color: rgba(0, 0, 0, 0) !important
+}
+
+::shadow .toolbar-item > .glyph,
+::shadow button.toolbar-item.toggled-off .glyph {
+    background-color: #7b7b7b !important
+}
+
+::shadow .toolbar-counter-item {
+    color: #ccc !important
+}
+
+
+::shadow .toolbar-shadow.floating {
+    background: -webkit-linear-gradient(#505050,
+        #363636) !important;
+    border: 1px solid #2f2f2f !important;
+    box-shadow: inset 0 0 4px 0 #000 !important
+}
+
+::shadow .toolbar-shadow.floating .toolbar-item {
+    background-color: #2f2f2f !important
+}
+
+::shadow .toolbar-shadow.floating .toolbar-item:hover {
+    background-color: #484848 !important
+}
+
+body .inspector-view-toolbar.status-bar::shadow .status-bar-item .status-bar-counter {
+    color: #ccc !important
+}
+
+body .inspector-view-toolbar.status-bar::shadow .status-bar-item .status-bar-counter:hover {
+    border-bottom: none !important
+}
+
+::shadow .toolbar-item {
+    color: #ccc !important
+}
+
+::shadow .toolbar-item.toggled-active .glyph {
+    background-color: #89f5a2 !important
+}
+
+::shadow .toolbar-divider {
+    background-color: #323232 !important
+}
+
+::shadow .toolbar-glyph {
+    background-color: #7b7b7b !important
+}
+
+::shadow .toolbar-button:enabled.hover:not(:active) .toolbar-glyph {
+    background-color: #959595 !important
+}
+
+::shadow .toolbar-state-on.toolbar-button:enabled:not(:active) .toolbar-glyph,
+::shadow .toolbar-button.toolbar-state-on .toolbar-glyph {
+    background-color: #89f5a2 !important
+}
+
+::shadow .toolbar-state-on .record-toolbar-item.toolbar-glyph,
+::shadow .toolbar-state-active .filter-toolbar-item.toolbar-glyph,
+::shadow .toolbar-state-active .block-toolbar-item.toolbar-glyph {
+    background-color: #7b7b7b !important
+}
+
+::shadow ::shadow .toolbar-button.toolbar-state-on .toolbar-glyph,
+::shadow ::shadow .toolbar-blue-on-hover .toolbar-button:not(.toolbar-state-on):enabled.hover:not(:active),
+::shadow ::shadow .-theme-selection-color {
+    background-color: #89f5a2 !important
+}
+
+::shadow .toolbar-shadow .toolbar-text {
+    color: #626262 !important
+}
+
+
 ::shadow .toolbar-shadow .toolbar-text,
 ::shadow .toolbar-item {
     color: #aaa !important;
