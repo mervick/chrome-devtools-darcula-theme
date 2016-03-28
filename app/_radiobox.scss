@@ -1,0 +1,41 @@
+@import "compass/css3";
+
+input[type=radio], .radio {
+    -webkit-appearance: none;
+    width: 18px;
+    height: 18px;
+    line-height: 0px;
+    border: 1px solid #d3cfc8;
+    margin: 0;
+    @include border-radius(50%);
+    @include box-sizing(border-box);
+    cursor: pointer;
+    position: relative;
+    top: 1px;
+    margin-bottom: -3px;
+    &:hover, &.hover {
+        border: 2px solid #2489c5;
+        outline: none;
+    }
+    &:checked, &.checked {
+        background-color: #2489c5;
+        border: 2px solid #2489c5;
+    }
+    &:checked::after, &.checked::after {
+        content: url("/img/check.png");
+        display: block;
+        position: absolute;
+        top: 3px;
+        left: 1px;
+    }
+    &:active, &:focus {
+        outline: none;
+    }
+    &:disabled, &.disabled {
+        border-color: #e9e7e3;
+        &:checked, &.checked {
+            background-color: #e9e7e3;
+            outline: none;
+        }
+    }
+}
