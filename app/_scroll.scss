@@ -1,5 +1,4 @@
 @import "compass";
-
 @import "__variables";
 
 .vbox > .CodeMirror {
@@ -14,12 +13,11 @@
 
 ::-webkit-scrollbar,
 .CodeMirror-scrollbar-filler,
-.CodeMirror-gutter-filler,
-::shadow ::-webkit-scrollbar,
-::shadow .CodeMirror-scrollbar-filler,
-::shadow .CodeMirror-gutter-filler {
-    width: 8px !important;
-    height: 8px !important;
+.CodeMirror-gutter-filler {
+    @include feel-free {
+        width: 8px !important;
+        height: 8px !important;
+    }
 }
 
 .CodeMirror-scrollbar-filler,
@@ -61,6 +59,16 @@
         background-image: linear-gradient(to right, #5c5c5c 0%, #525252 100%) !important;
         &:hover {
             background-image: linear-gradient(to right, #6f6f6f 0%, #656565 100%) !important;
+        }
+    }
+}
+
+.custom-popup-horizontal-scroll,
+.custom-popup-vertical-scroll {
+    @include feel-free {
+        ::-webkit-scrollbar-track:horizontal,
+        ::-webkit-scrollbar-track:vertical {
+            background: transparent!important;
         }
     }
 }
