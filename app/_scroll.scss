@@ -11,12 +11,14 @@
     background-color: transparent !important;
 }
 
-::-webkit-scrollbar,
-.CodeMirror-scrollbar-filler,
-.CodeMirror-gutter-filler {
+::shadow {
     @include feel-free {
-        width: 8px !important;
-        height: 8px !important;
+        ::-webkit-scrollbar,
+        .CodeMirror-scrollbar-filler,
+        .CodeMirror-gutter-filler {
+            width: 8px !important;
+            height: 8px !important;
+        }
     }
 }
 
