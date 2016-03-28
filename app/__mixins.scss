@@ -1,8 +1,42 @@
 
+@mixin mask-image-set($content...) {
+    -webkit-mask-image: -webkit-image-set($content);
+}
+
+@mixin elements-hover-dom-tree() {
+    outline: 1px solid #363636 !important;
+    //background-color: rgba(0, 0, 0, 0.1);
+}
+
 @mixin image-content($url) {
     content: inline_image($url) !important;
 }
 
 @mixin image-bg($url) {
     background-image: inline_image($url) !important;
+}
+
+@mixin root-wrap($class) {
+    @at-root {
+        #{$class} #{&} {
+            @content;
+        }
+    }
+}
+
+@mixin feel-free {
+    @at-root {
+        @content;
+        #{&} {
+            @content;
+        }
+    }
+}
+
+@mixin shadow {
+    ::shadow {
+        @include feel-free {
+            @content;
+        }
+    }
 }
