@@ -1,0 +1,89 @@
+$image-map: () !default;
+$empty-image: 'data:image/gif;base64,R0lGODlhAQABAJH/AP///wAAAMDAwAAAACH5BAEAAAIALAAAAAABAAEAAAICVAEAOw==';
+
+@function image-store($key, $url: null) {
+    $selector: &;
+    $map: ();
+    $list: ();
+    @if map-has-key($image-map, $key) {
+        $map: map-get($image-map, $key);
+    }
+    @if map-has-key($map, $url) {
+        $list: map-get($map, $url);
+    }
+    $list: append($list, $selector, comma);
+    $map: map-merge($map, ($url: $list));
+    $image-map: map-merge($image-map, ($key: $map)) !global;
+    @return null;
+}
+
+@mixin _flash-image($key) {
+    $map: ();
+    @if map-has-key($image-map, $key) {
+        $map: map-get($image-map, $key);
+    }
+    @each $value, $list in $map {
+        #{$list} {
+            @if $key == content {
+                content: inline_image($value) !important;
+            }
+            @elseif $key == background {
+                background-image: inline_image($value) !important;
+            }
+            @elseif $key == content-empty {
+                content: url($empty-image);
+            }
+            @else {
+                #{$key}: $value;
+            }
+        }
+    }
+    $image-map: map-merge($image-map, ($key: ())) !global;
+}
+
+@mixin flash-inline-images() {
+    $selectors: ();
+    @each $attr, $map in $image-map {
+        @each $value, $selector in $map {
+            $attributes: ();
+            //$selector: "" + $selector;
+            @if map-has-key($selectors, $selector) {
+                $attributes: map-get($selectors, $selector);
+            }
+            @debug $attributes, $selector;
+            $attributes: map-merge($attributes, ($attr: $value));
+            $selectors: map-merge($selectors, ($selector: $attributes));
+        }
+    }
+    @each $selector, $attributes in $selectors {
+        #{$selector} {
+            @each $attr, $value in $attributes {
+                @if $attr == content {
+                    content: inline_image($value) !important;
+                } @else if $attr == background {
+                    background-image: inline_image($value) !important;
+                } @else if $attr == content-empty {
+                    content: url($empty-image);
+                } @else {
+                    #{$attr}: $value;
+                }
+            }
+        }
+    }
+    //@each $key, $map in $image-map {
+    //    @each $value, $list in $map {
+    //        #{$list} {
+    //            @if $key == content {
+    //                content: inline_image($value) !important;
+    //            } @else if $key == background {
+    //                background-image: inline_image($value) !important;
+    //            } @else if $key == content-empty {
+    //                content: url($empty-image);
+    //            } @else {
+    //                #{$key}: $value;
+    //            }
+    //        }
+    //    }
+    //}
+    $image-map: () !global;
+}
