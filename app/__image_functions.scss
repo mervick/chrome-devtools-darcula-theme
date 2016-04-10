@@ -26,7 +26,6 @@ $empty-image: 'data:image/gif;base64,R0lGODlhAQABAJH/AP///wAAAMDAwAAAACH5BAEAAAI
             @if map-has-key($selectors, $selector) {
                 $attributes: map-get($selectors, $selector);
             }
-            @debug $attributes, $selector;
             $attributes: map-merge($attributes, ($attr: $value));
             $selectors: map-merge($selectors, ($selector: $attributes));
         }
