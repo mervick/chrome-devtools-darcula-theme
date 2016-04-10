@@ -17,30 +17,6 @@ $empty-image: 'data:image/gif;base64,R0lGODlhAQABAJH/AP///wAAAMDAwAAAACH5BAEAAAI
     @return null;
 }
 
-@mixin _flash-image($key) {
-    $map: ();
-    @if map-has-key($image-map, $key) {
-        $map: map-get($image-map, $key);
-    }
-    @each $value, $list in $map {
-        #{$list} {
-            @if $key == content {
-                content: inline_image($value) !important;
-            }
-            @elseif $key == background {
-                background-image: inline_image($value) !important;
-            }
-            @elseif $key == content-empty {
-                content: url($empty-image);
-            }
-            @else {
-                #{$key}: $value;
-            }
-        }
-    }
-    $image-map: map-merge($image-map, ($key: ())) !global;
-}
-
 @mixin flash-inline-images() {
     $selectors: ();
     @each $attr, $map in $image-map {
@@ -70,20 +46,5 @@ $empty-image: 'data:image/gif;base64,R0lGODlhAQABAJH/AP///wAAAMDAwAAAACH5BAEAAAI
             }
         }
     }
-    //@each $key, $map in $image-map {
-    //    @each $value, $list in $map {
-    //        #{$list} {
-    //            @if $key == content {
-    //                content: inline_image($value) !important;
-    //            } @else if $key == background {
-    //                background-image: inline_image($value) !important;
-    //            } @else if $key == content-empty {
-    //                content: url($empty-image);
-    //            } @else {
-    //                #{$key}: $value;
-    //            }
-    //        }
-    //    }
-    //}
     $image-map: () !global;
 }
