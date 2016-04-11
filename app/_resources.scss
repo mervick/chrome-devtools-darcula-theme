@@ -1,42 +1,41 @@
+@import "__image_functions";
 @import "__mixins";
 @import "__variables";
 
-.resources.panel .sidebar {
-    padding-left: 10px!important;
-    z-index: 10!important;
-    display: block;
-}
-
-.resources.panel .sidebar li.selected {
-    color: white;
-}
-
-.resources.panel .base-storage-tree-element-title {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    padding-left: 10px;
-    display: inline!important;
-}
-
-.resources.panel .status {
-    float: right;
-    height: 24px!important;
-    margin-top: 12px!important;
-    margin-left: 24px!important;
-    line-height: 1em!important;
-}
-
-.resources.panel .sidebar .icon,
-li.parent .selection + :not(.icon):before {
-    float: left;
-    width: 16px;
-    height: 16px;
-    position: relative;
-    top: 4px!important;
-    margin-top: -3px!important;
-    display: inline-block!important;
-    margin-left: 4px!important;
-    margin-right: 2px;
+.resources.panel {
+    .sidebar {
+        padding-left: 10px!important;
+        z-index: 10!important;
+        display: block;
+        li.selected {
+            color: white;
+        }
+    }
+    .base-storage-tree-element-title {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        padding-left: 10px;
+        display: inline!important;
+    }
+    .status {
+        float: right;
+        height: 24px!important;
+        margin-top: 12px!important;
+        margin-left: 24px!important;
+        line-height: 1em!important;
+    }
+    .sidebar .icon,
+    li.parent .selection + :not(.icon):before {
+        float: left;
+        width: 16px;
+        height: 16px;
+        position: relative;
+        top: 4px!important;
+        margin-top: -3px!important;
+        display: inline-block!important;
+        margin-left: 4px!important;
+        margin-right: 2px;
+    }
 }
 
 .frame-storage-tree-item .icon,
@@ -47,6 +46,10 @@ li.parent .selection + :not(.icon):before {
 
 .children .frame-storage-tree-item .icon {
     @include image-content("directory.png");
+}
+
+.panel.resources .widget > .children > .frame-storage-tree-item .icon {
+    @include image-content("project.png");
 }
 
 .resource-sidebar-tree-item {
@@ -78,12 +81,10 @@ li.parent .selection + :not(.icon):before {
     }
 }
 
-
 .database-storage-tree-item .icon,
 .indexed-db-storage-tree-item .icon {
     @include image-content("db.png");
 }
-
 
 .database-table-storage-tree-item .icon,
 .indexed-db-object-store-storage-tree-item .icon,
@@ -144,46 +145,52 @@ $height: 20px;
     height: $height !important;
 }
 
-.panel:not(.elements):not(.console) .base-storage-tree-element-title,
-.panel:not(.elements):not(.console) .base-storage-tree-element-subtitle,
-.panel:not(.elements):not(.console) .base-navigator-tree-element-title {
-    color: #ccc !important;
-    top: 0 !important;
-    line-height: $height !important;
-}
+.panel:not(.elements):not(.console) {
+    .base-storage-tree-element-title,
+    .base-storage-tree-element-subtitle,
+    .base-navigator-tree-element-title {
+        color: #ccc !important;
+        top: 0 !important;
+        line-height: $height !important;
+    }
 
-.panel:not(.elements):not(.console) .selected .base-storage-tree-element-title,
-.panel:not(.elements):not(.console) .selected .base-storage-tree-element-subtitle,
-.panel:not(.elements):not(.console) .selected .base-navigator-tree-element-title {
-    color: #e6e6e6 !important;
-    text-shadow: none !important;
-    line-height: $height !important;
-}
+    .selected .base-storage-tree-element-title,
+    .selected .base-storage-tree-element-subtitle,
+    .selected .base-navigator-tree-element-title {
+        color: #e6e6e6 !important;
+        text-shadow: none !important;
+        line-height: $height !important;
+    }
 
-.panel:not(.elements):not(.console) .sidebar li {
-    color: #ccc !important
-}
+    .sidebar li {
+        color: #ccc !important
+    }
 
-.panel:not(.elements):not(.console) .outline-disclosure li.selected .selection,
-.panel:not(.elements):not(.console) .outline-disclosure ol:focus li.selected .selection {
-    background: $selection-fg !important;
-    color: $selection-color !important;
-    margin-top: -1px !important;
-    text-shadow: none !important
-}
+    .outline-disclosure li.selected .selection,
+    .outline-disclosure ol:focus li.selected .selection {
+        background: $selection-fg !important;
+        color: $selection-color !important;
+        margin-top: -1px !important;
+        text-shadow: none !important;
+        left: 0 !important;
+        right: 0 !important;
+    }
 
-.panel:not(.elements):not(.console) .outline-disclosure li:hover:not(.selected) .selection,
-.panel:not(.elements):not(.console) .outline-disclosure li.hovered:not(.selected) .selection {
-    display: block !important;
-    background: $hover-fg !important;
-    color: $hover-color !important;
-    margin-top: -1px !important;
-    border-radius: 0 !important
-}
+    .outline-disclosure li:hover:not(.selected) .selection,
+    .outline-disclosure li.hovered:not(.selected) .selection {
+        display: block !important;
+        background: $hover-fg !important;
+        color: $hover-color !important;
+        margin-top: -1px !important;
+        border-radius: 0 !important;
+        left: 0 !important;
+        right: 0 !important;
+    }
 
-.panel:not(.elements):not(.console) .sidebar-overlay {
-    border-right: 1px solid #2a2a2a !important;
-    box-shadow: #141414 5px 0 22px 3px !important
+    .sidebar-overlay {
+        border-right: 1px solid #2a2a2a !important;
+        box-shadow: #141414 5px 0 22px 3px !important
+    }
 }
 
 .resources.panel {
