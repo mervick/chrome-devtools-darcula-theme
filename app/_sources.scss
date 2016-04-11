@@ -1,5 +1,6 @@
-@import "__variables";
+@import "__image_functions";
 @import "__mixins";
+@import "__variables";
 
 .panel.sources {
 
@@ -33,7 +34,7 @@
         }
 
         li {
-            color: #ccc !important
+            color: #ccc !important;
         }
 
         .outline-disclosure li.selected .selection,
@@ -41,7 +42,9 @@
             background: $selection-fg !important;
             color: $selection-color !important;
             margin-top: -1px !important;
-            text-shadow: none !important
+            text-shadow: none !important;
+            left: 0 !important;
+            right: 0 !important;
         }
 
         .outline-disclosure li:hover:not(.selected) .selection,
@@ -50,7 +53,9 @@
             background: $hover-fg !important;
             color: $hover-color !important;
             margin-top: -1px !important;
-            border-radius: 0 !important
+            border-radius: 0 !important;
+            left: 0 !important;
+            right: 0 !important;
         }
 
         .icon {
