@@ -1,3 +1,4 @@
+@import "__image_functions";
 
 @mixin mask-image-set($content...) {
     -webkit-mask-image: -webkit-image-set($content);
@@ -9,11 +10,15 @@
 }
 
 @mixin image-content($url) {
-    content: inline_image($url) !important;
+    $_hack: image-store(display, inline-block),
+            image-store(width, image_width($url) !important),
+            image-store(height, image_height($url) !important),
+            image-store(content-empty),
+            image-store(background, $url);
 }
 
 @mixin image-bg($url) {
-    background-image: inline_image($url) !important;
+    $_hack: image-store(background, $url);
 }
 
 @mixin root-wrap($class) {
