@@ -11,517 +11,288 @@
     }
 }
 
-.cm-error {
-    background: #9d1e15 !important;
-    border-radius: 2px !important;
-    color: #eee !important
-}
-
 .cm-atom {
-    color: #89f5a2 !important
+    color: #89f5a2 !important;
 }
 
 .cm-comment {
     color: #676767 !important;
-    font-style: italic
+    font-style: italic;
 }
 
 .cm-variable {
-    color: #ccc !important
+    color: #ccc !important;
 }
 
 .cm-string {
-    color: #f07b3c !important
+    color: #f07b3c !important;
 }
 
 .cm-keyword {
     color: #8b6ccf !important;
-    font-style: italic
+    font-style: italic;
 }
 
 .cm-number {
-    color: #89f5a2 !important
+    color: #89f5a2 !important;
 }
 
 .cm-operator {
-    color: #cdb943 !important
+    color: #cdb943 !important;
 }
 
 .cm-error {
     background: #9d1e15 !important;
-    color: #ccc !important
+    border-radius: 2px !important;
+    color: #eee !important;
+    color: #ccc !important;
 }
 
 .cm-s-default .cm-property {
-    color: #ccc !important
-}
-
-.cm-js-atom {
-    color: #89f5a2 !important
-}
-
-.cm-js-attribute {
-    color: #4e87bf !important
-}
-
-.cm-js-builtin {
-    color: #8da6ce !important
-}
-
-.cm-js-comment {
-    color: #676767 !important;
-    font-style: italic
-}
-
-.cm-js-def {
-    color: #49a6d2 !important
-}
-
-.cm-js-error {
-    background: #9d1e15 !important;
-    color: #ccc !important
-}
-
-.cm-js-header {
-    color: #ff6400 !important
-}
-
-.cm-js-hr {
-    color: #aeaeae !important
-}
-
-.cm-js-keyword {
-    color: #8b6ccf !important;
-    font-style: italic
-}
-
-.cm-js-link {
-    color: #8da6ce !important
-}
-
-.cm-js-meta {
-    color: #d8fa3c !important
-}
-
-.cm-js-number,
-.section .properties .number,
-.event-properties .number {
-    color: #89f5a2 !important
-}
-
-.cm-js-operator {
-    color: #cdb943 !important
-}
-
-.cm-js-property {
-    color: #cdb943 !important
-}
-
-.cm-js-string {
-    color: #f07b3c !important
-}
-
-.cm-js-string-2 {
-    color: #f07b3c !important
-}
-
-.cm-js-tag {
-    color: #49a6d2 !important
-}
-
-.cm-js-variable {
-    color: #ccc !important
-}
-
-.cm-js-variable-2 {
-    color: #ccc !important
-}
-
-.cm-css-atom {
-    color: #ccc !important
-}
-
-.cm-css-builtin {
-    color: #ff9635 !important
-}
-
-.cm-css-def {
-    color: #ff9635 !important
-}
-
-.cm-css-comment {
-    color: #676767 !important;
-    font-style: italic
-}
-
-
-.cm-css-number {
-    color: #ccc !important
-}
-
-.cm-css-operator {
-    color: #ccc !important
-}
-
-.cm-css-qualifier {
-    color: #ff9635 !important
-}
-
-.cm-css-string {
-    color: #e3b959 !important
-}
-
-.cm-css-string-2 {
-    color: #ccc !important
-}
-
-.cm-css-tag {
-    color: #ff9635 !important
-}
-
-.cm-css-variable {
-    color: #ff9635 !important
-}
-
-.cm-css-variable-2 {
-    color: #ff9635 !important
-}
-
-.webkit-css-selector {
-    color: #ff9635 !important
-}
-
-.webkit-css-at-rule {
-    color: #b094bb !important
-}
-
-.webkit-css-color {
-    color: #ff9635 !important
-}
-
-.webkit-css-comment {
-    color: #676767 !important
-}
-
-.webkit-css-important {
-    color: #f00 !important
-}
-
-.webkit-css-keyword {
-    color: #ff9635 !important
-}
-
-.webkit-css-number {
-    color: #ccc !important
-}
-
-
-.webkit-css-string {
-    color: #e3b959 !important
-}
-
-.webkit-css-url {
-    color: #e3b959 !important
-}
-
-.cm-xml-comment {
-    color: #7c7c7c !important;
-    font-style: italic !important
-}
-
-.cm-xml-error {
-    color: #bf4c4c !important
-}
-
-.cm-xml-string {
-    color: #f0874f !important
-}
-
-.cm-xml-tag {
-    color: #49a6d2 !important
-}
-
-.cm-xml-attribute {
-    color: #88aed5 !important
-}
-
-.cm-xml-link {
-    color: #e3b959 !important
-}
-
-.webkit-html-attribute-name {
-    color: #88aed5 !important
-}
-
-.webkit-html-attribute-value {
-    color: #f0874f !important
-}
-
-.webkit-html-comment {
-    color: #7c7c7c !important;
-    font-style: italic
-}
-
-.webkit-html-resource-link,
-.webkit-html-external-link {
-    color: #e3b959 !important
-}
-
-.webkit-html-tag,
-.webkit-html-tag-name,
-.webkit-html-close-tag-name {
-    color: #49a6d2 !important
-}
-
-.webkit-html-text-node,
-.webkit-html-css-node,
-.webkit-html-js-node {
-    color: #c2c3c3 !important
-}
-
-.webkit-html-pseudo-element {
-    color: #49a5d2 !important
-}
-
-::shadow .webkit-html-fragment {
-    color: #db0 !important
-}
-
-::shadow .highlight {
-    color: #db0 !important
-}
-
-::shadow .cm-js-atom {
-    color: #89f5a2 !important
-}
-
-::shadow .cm-js-attribute {
-    color: #4e87bf !important
-}
-
-::shadow .cm-js-builtin {
-    color: #8da6ce !important
-}
-
-::shadow .cm-js-comment {
-    color: #676767 !important;
-    font-style: italic
-}
-
-::shadow .cm-js-def {
-    color: #49a6d2 !important
-}
-
-::shadow .cm-js-error {
-    background: #9d1e15 !important;
-    color: #ccc !important
-}
-
-::shadow .cm-js-header {
-    color: #ff6400 !important
-}
-
-::shadow .cm-js-hr {
-    color: #aeaeae !important
-}
-
-::shadow .cm-js-keyword {
-    color: #8b6ccf !important;
-    font-style: italic
-}
-
-::shadow .cm-js-link {
-    color: #8da6ce !important
-}
-
-::shadow .cm-js-meta {
-    color: #d8fa3c !important
-}
-
-::shadow .cm-js-number {
-    color: #89f5a2 !important
-}
-
-::shadow .cm-js-operator {
-    color: #cdb943 !important
-}
-
-::shadow .cm-js-property {
-    color: #cdb943 !important
-}
-
-::shadow .cm-js-string {
-    color: #f07b3c !important
-}
-
-::shadow .cm-js-string-2 {
-    color: #f07b3c !important
-}
-
-::shadow .cm-js-tag {
-    color: #49a6d2 !important
-}
-
-::shadow .cm-js-variable {
-    color: #ccc !important
-}
-
-::shadow .cm-js-variable-2 {
-    color: #ccc !important
-}
-
-::shadow .cm-css-atom {
-    color: #ccc !important
-}
-
-::shadow .cm-css-builtin {
-    color: #ff9635 !important
-}
-
-::shadow .cm-css-def {
-    color: #ff9635 !important
-}
-
-::shadow .cm-css-comment {
-    color: #676767 !important;
-    font-style: italic
-}
-
-
-
-::shadow .cm-css-number {
-    color: #ccc !important
-}
-
-::shadow .cm-css-operator {
-    color: #ccc !important
-}
-
-::shadow .cm-css-qualifier {
-    color: #ff9635 !important
-}
-
-::shadow .cm-css-string {
-    color: #e3b959 !important
-}
-
-::shadow .cm-css-string-2 {
-    color: #ccc !important
-}
-
-::shadow .cm-css-tag {
-    color: #ff9635 !important
-}
-
-::shadow .cm-css-variable {
-    color: #ff9635 !important
-}
-
-::shadow .cm-css-variable-2 {
-    color: #ff9635 !important
-}
-
-::shadow .webkit-css-selector {
-    color: #ff9635 !important
-}
-
-::shadow .webkit-css-at-rule {
-    color: #b094bb !important
-}
-
-::shadow .webkit-css-color {
-    color: #ff9635 !important
-}
-
-::shadow .webkit-css-comment {
-    color: #676767 !important
-}
-
-::shadow .webkit-css-important {
-    color: #f00 !important
-}
-
-::shadow .webkit-css-keyword {
-    color: #ff9635 !important
-}
-
-::shadow .webkit-css-number {
-    color: #ccc !important
-}
-
-
-
-::shadow .webkit-css-string {
-    color: #e3b959 !important
-}
-
-::shadow .webkit-css-url {
-    color: #e3b959 !important
-}
-
-::shadow .cm-xml-comment {
-    color: #7c7c7c !important;
-    font-style: italic !important
-}
-
-::shadow .cm-xml-error {
-    color: #bf4c4c !important
-}
-
-::shadow .cm-xml-string {
-    color: #f0874f !important
-}
-
-::shadow .cm-xml-tag {
-    color: #49a6d2 !important
-}
-
-::shadow .cm-xml-attribute {
-    color: #88aed5 !important
-}
-
-::shadow .cm-xml-link {
-    color: #e3b959 !important
-}
-
-::shadow .webkit-html-attribute-name {
-    color: #88aed5 !important
-}
-
-::shadow .webkit-html-attribute-value {
-    color: #f0874f !important
-}
-
-::shadow .webkit-html-comment {
-    color: #7c7c7c !important;
-    font-style: italic
-}
-
-::shadow .webkit-html-resource-link,
-::shadow .webkit-html-external-link {
-    color: #e3b959 !important
-}
-
-::shadow .webkit-html-tag,
-::shadow .webkit-html-tag-name,
-::shadow .webkit-html-close-tag-name {
-    color: #49a6d2 !important
-}
-
-::shadow .webkit-html-text-node,
-::shadow .webkit-html-css-node,
-::shadow .webkit-html-js-node {
-    color: #c2c3c3 !important
-}
-
-::shadow .webkit-html-pseudo-element {
-    color: #49a5d2 !important
+    color: #ccc !important;
+}
+
+::shadow {
+    .webkit-html-fragment {
+        color: #db0 !important;
+    }
+
+    .highlight {
+        color: #db0 !important;
+    }
+
+    @include feel-free {
+        .cm-js-atom {
+            color: #89f5a2 !important;
+        }
+
+        .cm-js-attribute {
+            color: #4e87bf !important;
+        }
+
+        .cm-js-builtin {
+            color: #8da6ce !important;
+        }
+
+        .cm-js-comment {
+            color: #676767 !important;
+            font-style: italic;
+        }
+
+        .cm-js-def {
+            color: #49a6d2 !important;
+        }
+
+        .cm-js-error {
+            background: #9d1e15 !important;
+            color: #ccc !important;
+        }
+
+        .cm-js-header {
+            color: #ff6400 !important;
+        }
+
+        .cm-js-hr {
+            color: #aeaeae !important;
+        }
+
+        .cm-js-keyword {
+            color: #8b6ccf !important;
+            font-style: italic;
+        }
+
+        .cm-js-link {
+            color: #8da6ce !important;
+        }
+
+        .cm-js-meta {
+            color: #d8fa3c !important;
+        }
+
+        .cm-js-number,
+        .section .properties .number,
+        .event-properties .number {
+            color: #89f5a2 !important;
+        }
+
+        .cm-js-operator {
+            color: #cdb943 !important;
+        }
+
+        .cm-js-property {
+            color: #cdb943 !important;
+        }
+
+        .cm-js-string {
+            color: #f07b3c !important;
+        }
+
+        .cm-js-string-2 {
+            color: #f07b3c !important;
+        }
+
+        .cm-js-tag {
+            color: #49a6d2 !important;
+        }
+
+        .cm-js-variable {
+            color: #ccc !important;
+        }
+
+        .cm-js-variable-2 {
+            color: #ccc !important;
+        }
+
+        .cm-css-atom {
+            color: #ccc !important;
+        }
+
+        .cm-css-builtin {
+            color: #ff9635 !important;
+        }
+
+        .cm-css-def {
+            color: #ff9635 !important;
+        }
+
+        .cm-css-comment {
+            color: #676767 !important;
+            font-style: italic;
+        }
+
+        .cm-css-number {
+            color: #ccc !important;
+        }
+
+        .cm-css-operator {
+            color: #ccc !important;
+        }
+
+        .cm-css-qualifier {
+            color: #ff9635 !important;
+        }
+
+        .cm-css-string {
+            color: #e3b959 !important;
+        }
+
+        .cm-css-string-2 {
+            color: #ccc !important;
+        }
+
+        .cm-css-tag {
+            color: #ff9635 !important;
+        }
+
+        .cm-css-variable {
+            color: #ff9635 !important;
+        }
+
+        .cm-css-variable-2 {
+            color: #ff9635 !important;
+        }
+
+        .webkit-css-selector {
+            color: #ff9635 !important;
+        }
+
+        .webkit-css-at-rule {
+            color: #b094bb !important;
+        }
+
+        .webkit-css-color {
+            color: #ff9635 !important;
+        }
+
+        .webkit-css-comment {
+            color: #676767 !important;
+        }
+
+        .webkit-css-important {
+            color: #f00 !important;
+        }
+
+        .webkit-css-keyword {
+            color: #ff9635 !important;
+        }
+
+        .webkit-css-number {
+            color: #ccc !important;
+        }
+
+        .webkit-css-string {
+            color: #e3b959 !important;
+        }
+
+        .webkit-css-url {
+            color: #e3b959 !important;
+        }
+
+        .cm-xml-comment {
+            color: #7c7c7c !important;
+            font-style: italic !important;
+        }
+
+        .cm-xml-error {
+            color: #bf4c4c !important;
+        }
+
+        .cm-xml-string {
+            color: #f0874f !important;
+        }
+
+        .cm-xml-tag {
+            color: #49a6d2 !important;
+        }
+
+        .cm-xml-attribute {
+            color: #88aed5 !important;
+        }
+
+        .cm-xml-link {
+            color: #e3b959 !important;
+        }
+
+        .webkit-html-attribute-name {
+            color: #88aed5 !important;
+        }
+
+        .webkit-html-attribute-value {
+            color: #f0874f !important;
+        }
+
+        .webkit-html-comment {
+            color: #7c7c7c !important;
+            font-style: italic;
+        }
+
+        .webkit-html-resource-link,
+        .webkit-html-external-link {
+            color: #e3b959 !important;
+        }
+
+        .webkit-html-tag,
+        .webkit-html-tag-name,
+        .webkit-html-close-tag-name {
+            color: #49a6d2 !important;
+        }
+
+        .webkit-html-text-node,
+        .webkit-html-css-node,
+        .webkit-html-js-node {
+            color: #c2c3c3 !important;
+        }
+
+        .webkit-html-pseudo-element {
+            color: #49a5d2 !important;
+        }
+    }
 }
 
 .font-stats-item {
-    color: #ccc !important
+    color: #ccc !important;
 }
 
 .selector-matches {
-    color: #ff9635 !important
+    color: #ff9635 !important;
 }
