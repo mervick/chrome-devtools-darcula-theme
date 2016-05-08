@@ -24,6 +24,12 @@
 }
 
 ::shadow {
+
+    .tabbed-pane-header-tab {
+        background: none !important;
+        height: 25px !important;
+    }
+
     .help-window-main .tabbed-pane-header-tab.selected {
         color: #89f5a2 !important
     }
@@ -34,7 +40,7 @@
         color: #ccc !important;
         &.selected {
             border-top: none !important;
-            border-left: 7px solid #89f5a2 !important;
+            border-left: 7px solid $tabbed-pane-top-border-color !important;
             padding-left: 13px !important;
         }
     }
@@ -67,26 +73,29 @@
         border-image: none !important;
         border-left: none !important;
         border-right: none !important;
-        border-top: 2px solid rgba(0, 0, 0, 0) !important;
+        border-top: 1px solid transparent !important;
         cursor: pointer !important;
-        margin: 0 0 1px 0 !important;
+        margin: 1px 0 0 0 !important;
     }
 
     .tabbed-pane-header-tab:hover {
         color: #f8f8f8 !important;
-        background-color: rgba(0, 0, 0, 0) !important;
+        background-color: $fg-hovered !important;
     }
 
     .tabbed-pane-header-tab.selected {
-        background: none !important;
-        border-top: 2px solid #89f5a2 !important;
+        background: $fg-selected !important;
+        border-top: 2px solid $tabbed-pane-top-border-color !important;
         color: #f8f8f8 !important;
         font-size: 1em;
+        margin: 0 !important;
+        height: 26px!important;
     }
 
     .tabbed-pane-header-contents {
         box-shadow: inset 0 1px 0 #626262;
         color: #999 !important;
+        margin-left: 0!important;
     }
 
     .tabbed-pane-header-tabs-drop-down-container {
@@ -104,17 +113,21 @@
 
 .inspector-view-tabbed-pane.tabbed-pane::shadow {
     .tabbed-pane-header {
-        flex: 0 0 34px !important;
+        flex: 0 0 30px !important;
     }
     .tabbed-pane-header-tabs-drop-down-container {
         padding-top: 6px !important;
     }
     .tabbed-pane-header-contents .tabbed-pane-header-tab {
-        height: 34px !important;
-        line-height: 25.5px !important;
+        height: 28px !important;
+        margin-top: 1px !important;
     }
 }
 
+.tabbed-pane-header-tab,
+.tabbed-pane-header-tab.selected {
+    padding: 0 8px !important;
+}
 
 select.tabbed-pane-header-tabs-drop-down-select {
     background-color: #222 !important;
@@ -167,7 +180,7 @@ body .inspector-view-toolbar.toolbar::shadow .toolbar-button-theme {
 
 .inspector-view-toolbar-left,
 .inspector-view-toolbar.tabbed-pane-header-after {
-    margin-top: 7px !important;
+    margin-top: 2px !important;
 }
 
 ::shadow .tabbed-pane-header-tab {
@@ -182,10 +195,11 @@ body .inspector-view-toolbar.toolbar::shadow .toolbar-button-theme {
 
 ::shadow .tabbed-pane-tab-slider {
     border-top: none !important;
+    background-color: $tabbed-pane-top-border-color !important;
+    bottom: 0 !important;
+    top: 0 !important
 }
 
-::shadow .tabbed-pane-header-tab {
-    &, &.selected {
-        background: none !important;
-    }
+.toolbar-divider {
+    margin: 2px 3px !important;
 }
