@@ -2705,13 +2705,16 @@ inset 0 -1px 0 0 #484848
     color: #ccc !important
 }
 
-::shadow .toolbar::shadow button.toolbar-item:enabled.hover .glyph {
-    background-color: #7b7b7b !important
+//::shadow .toolbar::shadow button.toolbar-item:enabled.hover .glyph {
+//    background-color: #7b7b7b !important
+//}
+::shadow .toolbar::shadow button.toolbar-item.hover .glyph {
+    background-color: rgba(66, 129, 235, 0.5) !important;
 }
 
 ::shadow .toolbar::shadow button.toolbar-item.toggled-on .glyph,
 ::shadow .toolbar::shadow button.toolbar-item.toggled-on.hover .glyph {
-    background-color: #89f5a2 !important
+    background-color: rgb(66, 129, 235) !important;
 }
 
 ::shadow .palette-preview:hover {
@@ -2944,7 +2947,8 @@ button.garbage-collect-status-bar-item:active .glyph .toggled-on .long-click-gly
 button.glue-async-status-bar-item:active .glyph .toggled-on .long-click-glyph,
 .filters-toggle.toggled-shown .glyph .toggled-on .long-click-glyph,
 ::shadow .toggled-on .long-click-glyph {
-    background-color: #89f5a2 !important
+    //background-color: #89f5a2 !important;
+    background-color: rgb(66, 129, 235) !important;
 }
 
 button.scripts-step-over .glyph .long-click-glyph,
@@ -3173,11 +3177,7 @@ inset 0 -1px 0 #1d1d1d;
 }
 
 
-::shadow .tabbed-pane-tab-slider {
-    background-color: #89f5a2 !important;
-    bottom: 0 !important;
-    top: 0 !important
-}
+
 
 
 .dt-checkbox-text,
