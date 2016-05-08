@@ -2,7 +2,46 @@
 @import "__mixins";
 @import "__variables";
 
+%file-types {
+    .navigator-domain-tree-item .icon {
+        @include image-content("web_app.png");
+        opacity: 1!important;
+    }
+    .navigator-folder-tree-item .icon,
+    .children .navigator-domain-tree-item .icon {
+        @include image-content("directory.png");
+        opacity: 1!important;
+    }
+    .navigator-image-tree-item .icon {
+        @include image-content("image.png");
+    }
+    .navigator-document-tree-item .icon {
+        @include image-content("html.png");
+    }
+    .navigator-stylesheet-tree-item .icon {
+        @include image-content("css.png");
+    }
+    .navigator-font-xhr-item .icon,
+    .navigator-font-tree-item .icon {
+        @include image-content("any_type.png");
+    }
+    .navigator-script-tree-item .icon {
+        @include image-content("js.png");
+    }
+    .navigator-sm-script-tree-item .icon {
+        @include image-content("js-min.png");
+    }
+    .navigator-sm-stylesheet-tree-item .icon {
+        @include image-content("sass.png");
+    }
+    .manifest-script-tree-item .icon {
+        @include image-content("manifest.png");
+    }
+}
+
 .panel.sources {
+
+    $height: 20px;
 
     .navigator-container,
     .navigator > ol,
@@ -11,8 +50,34 @@
         z-index: 10!important;
     }
 
+    .widget.vbox {
+        ::shadow {
+            .tree-outline {
+                li > .icon {
+                    display: block;
+                    -webkit-mask-image: none;
+                    float: left;
+                    width: 16px;
+                    height: 16px;
+                    position: relative;
+                    display: inline-block !important;
+                    margin-left: 2px !important;
+                    margin-right: 4px;
+                    background-image: none !important;
+                    -webkit-mask-image: none;
+                    background-color: transparent!important;
+                    @include image-content("file.png");
+                }
+                .navigator-frame-tree-item .icon {
+                    @include image-content("web_app.png");
+                }
+
+                @extend %file-types;
+            }
+        }
+    }
+
     .navigator {
-        $height: 20px;
 
         li,
         li .selection,
@@ -71,37 +136,7 @@
             @include image-content("file.png");
             background-image: none !important;
         }
-        .navigator-domain-tree-item .icon {
-            @include image-content("web_app.png");
-            opacity: 1!important;
-        }
-        .navigator-folder-tree-item .icon,
-        .children .navigator-domain-tree-item .icon {
-            @include image-content("directory.png");
-            opacity: 1!important;
-        }
-        .navigator-image-tree-item .icon {
-            @include image-content("image.png");
-        }
-        .navigator-document-tree-item .icon {
-            @include image-content("html.png");
-        }
-        .navigator-stylesheet-tree-item .icon {
-            @include image-content("css.png");
-        }
-        .navigator-font-xhr-item .icon,
-        .navigator-font-tree-item .icon {
-            @include image-content("any_type.png");
-        }
-        .navigator-script-tree-item .icon {
-            @include image-content("js.png");
-        }
-        .navigator-sm-script-tree-item .icon {
-            @include image-content("js-min.png");
-        }
-        .manifest-script-tree-item .icon {
-            @include image-content("manifest.png");
-        }
+        @extend %file-types;
     }
 
     .sources-toolbar {
