@@ -30,3 +30,11 @@
         }
     }
 }
+
+.child-editing ::shadow  * {
+    box-shadow: none !important;
+}
+
+.editing, ::shadow .editing {
+    box-shadow: none !important;
+}
