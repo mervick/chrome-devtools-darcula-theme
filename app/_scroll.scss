@@ -74,3 +74,13 @@
         }
     }
 }
+
+:not(.platform-mac).-theme-with-dark-background ::-webkit-scrollbar-thumb,
+:host-context(:not(.platform-mac).-theme-with-dark-background) .-theme-with-dark-background ::-webkit-scrollbar-thumb {
+    -webkit-box-shadow: none!important;
+}
+
+:not(.platform-mac).-theme-with-dark-background ::-webkit-scrollbar-track,
+:host-context(:not(.platform-mac).-theme-with-dark-background) ::-webkit-scrollbar-track {
+    -webkit-box-shadow: none!important;
+}
