@@ -1,3 +1,4 @@
+@import "__image_functions";
 @import "__mixins";
 
 $veryImportant: !important !important;
@@ -14,6 +15,7 @@ $Images_navigationControls_2x: url(Images/navigationControls_2x.png);
 $color: #ccc;
 
 $selection-fg: #214283;
+$tabbed-pane-top-border-color: #3E82F7;
 $selection-color: #e6e6e6;
 //$selection-border-color: #56795e;
 $selection-border-color: #214283;
@@ -25,7 +27,7 @@ $hover-color: #ccc;
 $fg: #3C3F41;
 $fg-hovered: #353739;
 $fg-hovered2: #4b4e50;
-$fg-selected: #2d2f30;
+$fg-selected: #2d2f30; // 1
 $fg-dark: #2B2B2B;
 $fg-darkness: #313335;
 $fg-current-line: #323232;
