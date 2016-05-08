@@ -51,6 +51,14 @@
     border-bottom: 1px solid #323232 !important
 }
 
+body .inspector-view-toolbar.status-bar::shadow .status-bar-item .status-bar-counter {
+    color: #ccc !important
+}
+
+body .inspector-view-toolbar.status-bar::shadow .status-bar-item .status-bar-counter:hover {
+    border-bottom: none !important
+}
+
 ::shadow .toolbar-item > .glyph,
 ::shadow .toolbar-item > .glyph:active,
 ::shadow .filter-toolbar-item.toggled-shown .glyph,
@@ -85,14 +93,6 @@
 
 ::shadow .toolbar-shadow.floating .toolbar-item:hover {
     background-color: #484848 !important
-}
-
-body .inspector-view-toolbar.status-bar::shadow .status-bar-item .status-bar-counter {
-    color: #ccc !important
-}
-
-body .inspector-view-toolbar.status-bar::shadow .status-bar-item .status-bar-counter:hover {
-    border-bottom: none !important
 }
 
 ::shadow .toolbar-item {
