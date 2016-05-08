@@ -2,7 +2,9 @@
 
 
 
+::shadow .tree-outline li:hover:not(.selected) .selection,
 ::shadow .tree-outline li.hovered:not(.selected) .selection {
+    display: block;
     background-color: $fg-darkness !important;
     box-shadow: none!important;
 }
