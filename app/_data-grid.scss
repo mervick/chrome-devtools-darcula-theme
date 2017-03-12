@@ -1,59 +1,73 @@
 @import "__variables";
+@import "__mixins";
 
 
 .data-grid {
-    border: 1px solid #151515 !important;
+    border: 1px solid $fg-darkness !important;
     background-color: transparent !important;
-    background-image: none !important
-}
+    background-image: none !important;
 
-.data-grid th,
-.data-grid .data {
-    background: none !important;
-    border-left: 1px solid #3c3c3c !important
-}
+    th, .data {
+        background: none !important;
+        border-left: 1px solid $fg !important;
+    }
 
-.data-grid .header {
-    background: #444 !important
-}
+    .header {
+        background: #444 !important;
 
-.data-grid .header th {
-    color: $glyph-active-color !important
-}
+        th {
+            color: $gray !important;
+        }
 
-.data-grid .header .key-column,
-.data-grid .header .value-column {
-    border: none !important
-}
+        .key-column,
+        .value-column {
+            border: none !important;
+        }
+    }
 
-.data-grid td {
-    border-left: 1px solid #282828 !important
-}
+    td {
+        border-left: 1px solid $fg-selected !important;
+    }
 
-.data-grid .data-container a {
-    text-decoration: none;
-    color: #e3b959 !important
-}
+    .data-container {
+        a {
+            text-decoration: none;
+            color: #e3b959 !important;
+        }
 
-.data-grid .data-container tr:nth-child(odd) {
-    background-color: #222 !important
-}
+        tr {
+            &:nth-child(even),
+            &:nth-child(odd) {
+                background-color: $fg-suggest-box !important;
+            }
 
-.data-grid .data-container tr:nth-child(even) {
-    background-color: #272727 !important
-}
+            &:not(.selected):not(.filler):not(.data-grid-filler-row):hover {
+                background-color: $fg-darkness !important;
+                outline: 1px solid $fg-darkness !important;
 
-.data-grid .data-container tr:not(.selected):not(.filler):hover {
-    background-color: #2f2f2f !important;
-    outline: 1px solid #414141 !important
-}
+                + tr.selected {
+                    outline: none!important;
+                }
+            }
 
-.data-grid .data-container tr.selected {
-    background-color: $selection-fg !important;
-    outline: 1px solid $selection-border-color !important
-}
+            &.selected {
+                background-color: $selection-fg !important;
+                outline: 1px solid $selection-border-color !important;
+                + tr:not(.selected):not(.filler):hover {
+                    outline: none!important;
+                }
+            }
 
-.data-grid .data-container tr .editing * {
-    color: #FFF !important;
-    background-color: #222 !important
+            &.data-grid-filler-row {
+                &, &:hover {
+                    background-color: $fg-suggest-box !important;
+                }
+            }
+
+            .editing * {
+                color: $gray !important;
+                background-color: $fg-dark !important;
+            }
+        }
+    }
 }

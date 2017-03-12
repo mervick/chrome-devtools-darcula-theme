@@ -40,7 +40,7 @@ html {
 #-blink-dev-tools ::shadow .editing,
 #-blink-dev-tools .editing {
     background-color: #222 !important;
-    outline: 1px solid #89f5a2 !important;
+    outline: 1px solid $glyph-active-color !important;
     color: #ccc !important
 }
 
@@ -96,7 +96,7 @@ html {
 }
 
 .filtered-item-list-dialog-item .highlight {
-    color: #89f5a2 !important
+    color: $glyph-active-color !important
 }
 
 .filtered-item-list-dialog > div.container {
@@ -180,7 +180,7 @@ html {
 }
 
 ::shadow .filtered-list-widget .filtered-list-widget-item .highlight {
-    color: #89f5a2 !important
+    color: $glyph-active-color !important
 }
 
 ::shadow .filtered-list-widget .filtered-list-widget-title {
@@ -282,7 +282,7 @@ input[type='range']::-webkit-slider-thumb {
 }
 
 .revision-history-link {
-    color: #89f5a2 !important
+    color: $glyph-active-color !important
 }
 
 .outline-disclosure.revision-history-drawer ol li {
@@ -355,7 +355,7 @@ input[type='range']::-webkit-slider-thumb {
 }
 
 .help-footnote a {
-    color: #89f5a2
+    color: $glyph-active-color
 }
 
 button.overrides-swap {
@@ -461,7 +461,7 @@ button.overrides-swap:not(:disabled):active {
 }
 
 ::shadow #search-results-pane-file-based .show-more-matches {
-    color: #89f5a2 !important
+    color: $glyph-active-color !important
 }
 
 ::shadow #search-results-pane-file-based .parent:hover {
@@ -484,7 +484,7 @@ button.overrides-swap:not(:disabled):active {
 }
 
 ::shadow .search-config-search:focus {
-    outline-color: #89f5a2 !important
+    outline-color: $glyph-active-color !important
 }
 
 ::shadow .search-match-line-number {
@@ -502,7 +502,7 @@ button.overrides-swap:not(:disabled):active {
     color: #000 !important;
     border-radius: 2px !important;
     font-size: 1em !important;
-    background-color: #89f5a2 !important;
+    background-color: $glyph-active-color !important;
     box-shadow: rgba(0, 0, 0, 0.498039) 3px 3px 4px 0 !important
 }
 
@@ -593,7 +593,7 @@ button.overrides-swap:not(:disabled):active {
 
 ::shadow ::shadow .regex-search-toolbar-item.toggled-on .toolbar-button-text,
 ::shadow ::shadow .case-sensitive-search-toolbar-item.toggled-on .toolbar-button-text {
-    color: #89f5a2 !important
+    color: $glyph-active-color !important
 }
 
 #console-messages,
@@ -696,7 +696,7 @@ body.dock-to-right:not(.undocked):not(.overlay-contents) {
 ::shadow style + .text-prompt-editing,
 .editing {
     background-color: #222 !important;
-    outline: 1px solid #89f5a2 !important;
+    outline: 1px solid $glyph-active-color !important;
     color: #ccc !important
 }
 
@@ -732,7 +732,7 @@ body.dock-to-right:not(.undocked):not(.overlay-contents) {
 }
 
 ::shadow .tooltip-shortcut {
-    color: #89f5a2 !important
+    color: $glyph-active-color !important
 }
 
 ::shadow .text-button,
@@ -842,17 +842,17 @@ inset 0 -1px 0 0 rgba(86, 121, 94, 0.5)
 
 .animations-timeline::shadow circle.animation-endpoint,
 .animations-timeline::shadow circle.animation-keyframe-point {
-    stroke: #89f5a2 !important;
-    fill: #89f5a2 !important
+    stroke: $glyph-active-color !important;
+    fill: $glyph-active-color !important
 }
 
 .animations-timeline::shadow path.animation-keyframe {
-    fill: #89f5a2 !important
+    fill: $glyph-active-color !important
 }
 
 .animations-timeline::shadow line.animation-delay-line,
 .animations-timeline::shadow .animation-line {
-    stroke: #89f5a2 !important
+    stroke: $glyph-active-color !important
 }
 
 ::shadow .elements-tree-outline ol.shadow-root {
@@ -874,7 +874,7 @@ inset 0 -1px 0 0 rgba(86, 121, 94, 0.5)
 }
 
 .animations-timeline::shadow .animation-buffer-preview.selected {
-    background-color: #89f5a2 !important
+    background-color: $glyph-active-color !important
 }
 
 .animations-timeline::shadow .animation-buffer-preview.selected > svg > line {
@@ -1023,12 +1023,12 @@ inset 0 -1px 0 0 rgba(86, 121, 94, 0.5)
 
 .request-headers-view .outline-disclosure .header-count,
 .request-headers-view .outline-disclosure .header-toggle {
-    color: #89f5a2 !important;
+    color: $glyph-active-color !important;
     margin-left: 4px !important
 }
 
 .request-headers-view .outline-disclosure .header-toggle:hover {
-    text-shadow: 0 0 10px #89f5a2
+    text-shadow: 0 0 10px $glyph-active-color
 }
 
 .network-cell-subtitle {
@@ -1063,7 +1063,7 @@ inset 0 -1px 0 0 rgba(86, 121, 94, 0.5)
 }
 
 .network-summary-bar .summary-blue {
-    color: #89f5a2 !important
+    color: $glyph-active-color !important
 }
 
 .network-summary-bar .summary-red {
@@ -1359,7 +1359,7 @@ input.status-bar-item:focus {
 ::shadow .service-workers-delete-button:active,
 ::shadow .service-workers-start-button:active,
 ::shadow .service-workers-stop-button:active {
-    background-color: #89f5a2
+    background-color: $glyph-active-color
 }
 
 ::shadow .help-window-main {
@@ -1385,7 +1385,7 @@ input.status-bar-item:focus {
 }
 
 ::shadow .help-window-main .help-section-title {
-    color: #89f5a2 !important
+    color: $glyph-active-color !important
 }
 
 ::shadow .help-window-main .help-block label,
@@ -1478,7 +1478,7 @@ input.status-bar-item:focus {
 }
 
 ::shadow .help-window-main .file-system-path-name {
-    color: #89f5a2 !important
+    color: $glyph-active-color !important
 }
 
 ::shadow .file-system-path,
@@ -1499,7 +1499,7 @@ input.status-bar-item:focus {
 }
 
 ::shadow .blackbox-dialog .columns-header {
-    color: #89f5a2 !important
+    color: $glyph-active-color !important
 }
 
 ::shadow .devices-list {
@@ -1507,7 +1507,7 @@ input.status-bar-item:focus {
 }
 
 ::shadow ::shadow .devices-title {
-    color: #89f5a2 !important
+    color: $glyph-active-color !important
 }
 
 ::shadow ::shadow input[type="text"] {
@@ -1555,7 +1555,7 @@ input.status-bar-item:focus {
 ::shadow ::shadow .devices-list-edit,
 ::shadow ::shadow .devices-list-remove {
     -webkit-mask-image: $Images_toolbarButtonGlyphs !important;
-    background-color: #89f5a2 !important;
+    background-color: $glyph-active-color !important;
     background-image: none !important
 }
 
@@ -1572,7 +1572,7 @@ input.status-bar-item:focus {
 }
 
 ::shadow .settings-experiment-hidden label .dt-checkbox-text {
-    color: #89f5a2 !important
+    color: $glyph-active-color !important
 }
 
 ::shadow ::shadow button {
@@ -1621,7 +1621,7 @@ inset 0 -1px 0 0 #484848
 ::shadow ::shadow .list-item:hover .remove-button {
     background-image: none !important;
     -webkit-mask-image: $Images_toolbarButtonGlyphs;
-    background-color: #89f5a2 !important
+    background-color: $glyph-active-color !important
 }
 
 ::shadow ::shadow .list-item:hover .edit-button {
@@ -1660,7 +1660,7 @@ inset 0 -1px 0 0 #484848
 ::shadow ::shadow ::shadow .list-item:hover .remove-button {
     background-image: none !important;
     -webkit-mask-image: $Images_toolbarButtonGlyphs;
-    background-color: #89f5a2 !important
+    background-color: $glyph-active-color !important
 }
 
 ::shadow ::shadow ::shadow .list-item:hover .edit-button {
@@ -1775,7 +1775,7 @@ inset 0 -1px 0 0 #484848
 ::shadow ::shadow ::shadow .conditions-list-edit,
 ::shadow ::shadow ::shadow .conditions-list-remove {
     -webkit-mask-image: $Images_toolbarButtonGlyphs !important;
-    background-color: #89f5a2 !important;
+    background-color: $glyph-active-color !important;
     background-image: none !important
 }
 
@@ -1810,7 +1810,7 @@ inset 0 -1px 0 0 #484848
 }
 
 ::shadow .settings-tab .file-system-name {
-    color: #89f5a2 !important
+    color: $glyph-active-color !important
 }
 
 ::shadow .settings-tab ::shadow button {
@@ -1962,7 +1962,7 @@ inset 0 -1px 0 0 #484848
 }
 
 .sidebar-pane .callstack-info.status .node-link {
-    color: #89f5a2
+    color: $glyph-active-color
 }
 
 .breakpoints-deactivated .breakpoint-list {
@@ -2064,7 +2064,7 @@ li.breakpoint-hit .breakpoint-hit-marker {
 }
 
 .webkit-highlighted-line {
-    background-color: #89f5a2 !important
+    background-color: $glyph-active-color !important
 }
 
 .alternate-status-bar-buttons-bar .scripts-pause,
@@ -2135,7 +2135,7 @@ li.breakpoint-hit .breakpoint-hit-marker {
 }
 
 .source-frame-infobar::shadow .source-frame-infobar-toggle-link {
-    color: #89f5a2 !important
+    color: $glyph-active-color !important
 }
 
 .watch-expression-header:hover {
@@ -2368,13 +2368,13 @@ inset 0 -1px 0 0 #484848
     box-shadow: none !important;
     border-radius: 2px !important;
     border: none !important;
-    background: #89f5a2 !important
+    background: $glyph-active-color !important
 }
 
 .overview-grid-window-rulers {
-    border-right: 1px solid #89f5a2;
-    border-left: 1px solid #89f5a2;
-    background: #89f5a2 !important;
+    border-right: 1px solid $glyph-active-color;
+    border-left: 1px solid $glyph-active-color;
+    background: $glyph-active-color !important;
     opacity: 0.2 !important
 }
 
@@ -2580,8 +2580,8 @@ inset 0 -1px 0 0 #484848
 }
 
 .popover .content .network-timing-bar {
-    background-color: #89f5a2 !important;
-    border-left-color: #89f5a2 !important
+    background-color: $glyph-active-color !important;
+    border-left-color: $glyph-active-color !important
 }
 
 .popover .content .network-timing-bar-title {
@@ -2630,7 +2630,7 @@ inset 0 -1px 0 0 #484848
 }
 
 .bezier-icon {
-    background-color: #89f5a2 !important
+    background-color: $glyph-active-color !important
 }
 
 .bezier-icon path {
@@ -2642,15 +2642,15 @@ inset 0 -1px 0 0 #484848
 }
 
 ::shadow .bezier-preview-animation {
-    background-color: #89f5a2 !important
+    background-color: $glyph-active-color !important
 }
 
 ::shadow .bezier-curve circle.bezier-control-circle {
-    fill: #89f5a2 !important
+    fill: $glyph-active-color !important
 }
 
 ::shadow .bezier-curve line.bezier-control-line {
-    stroke: #89f5a2 !important
+    stroke: $glyph-active-color !important
 }
 
 ::shadow .bezier-curve line.bezier-control-accent {
@@ -2709,12 +2709,12 @@ inset 0 -1px 0 0 #484848
 
 .screencast .screencast-viewport {
     background-color: #3c3c3c;
-    box-shadow: 0 0 2px 0 #89f5a2;
+    box-shadow: 0 0 2px 0 $glyph-active-color;
     margin: auto !important
 }
 
 .screencast .screencast-navigation button {
-    background-color: #89f5a2 !important;
+    background-color: $glyph-active-color !important;
     @include mask-image-set($Images_navigationControls 1x, $Images_navigationControls_2x 2x);
     background-image: none !important;
     border: none !important;
@@ -2742,7 +2742,7 @@ inset 0 -1px 0 0 #484848
 }
 
 .screencast .screencast-navigation .progress {
-    background-color: #89f5a2 !important
+    background-color: $glyph-active-color !important
 }
 
 .screencast .screencast-navigation input {
@@ -2805,7 +2805,7 @@ inset 0 -1px 0 0 #484848
 }
 
 .toolbar-gray-toggled::shadow .class-toolbar-item.toggled-on .toolbar-button-text {
-    color: #89f5a2 !important
+    color: $glyph-active-color !important
 }
 
 .toolbar-gray-toggled::shadow .class-toolbar-item.hover .toolbar-button-text,
@@ -2826,7 +2826,7 @@ inset 0 -1px 0 0 #484848
 }
 
 ::shadow .toolbar-button.toolbar-state-on .toolbar-text {
-    color: #89f5a2 !important
+    color: $glyph-active-color !important
 }
 
 div.ax-computed-name {
@@ -2913,7 +2913,7 @@ button.garbage-collect-status-bar-item:active .glyph .toggled-on .long-click-gly
 button.glue-async-status-bar-item:active .glyph .toggled-on .long-click-glyph,
 .filters-toggle.toggled-shown .glyph .toggled-on .long-click-glyph,
 ::shadow .toggled-on .long-click-glyph {
-    //background-color: #89f5a2 !important;
+    //background-color: $glyph-active-color !important;
     background-color: rgb(66, 129, 235) !important;
 }
 
@@ -2937,7 +2937,7 @@ button.glue-async-status-bar-item:active .glyph .long-click-glyph,
 }
 
 #scripts-debugger-status {
-    color: #89f5a2 !important
+    color: $glyph-active-color !important
 }
 
 button.scripts-step-over:disabled .glyph,
@@ -3131,25 +3131,24 @@ inset 0 -1px 0 #1d1d1d;
 
 
 ::shadow .shadow-split-widget.hbox > .shadow-split-widget-sidebar:not(.maximized) {
-    border-left: 2px solid #2f2f2f !important
+    border-left: 2px solid #2f2f2f !important;
 }
 
 ::shadow .shadow-split-widget.hbox.shadow-split-widget-first-is-sidebar > .shadow-split-widget-sidebar:not(.maximized) {
-    border-right: 2px solid #2f2f2f !important
+    border-right: 2px solid #2f2f2f !important;
 }
 
 ::shadow .shadow-split-widget button.sidebar-show-hide-button {
-    background-color: #7b7b7b !important
+    background-color: #7b7b7b !important;
 }
 
 
-
-
+@import "app/network";
 
 .dt-checkbox-text,
 ::shadow .dt-checkbox-text,
 ::content .dt-checkbox-text {
-    color: #ccc !important
+    color: #ccc !important;
 }
 
 
