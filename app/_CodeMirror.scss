@@ -99,7 +99,7 @@ span.CodeMirror-selectedtext {
 }
 
 .CodeMirror-linewidget .source-frame-breakpoint-message {
-    color: #89f5a2 !important
+    color: $glyph-active-color !important
 }
 
 .CodeMirror-linewidget #source-frame-breakpoint-condition {

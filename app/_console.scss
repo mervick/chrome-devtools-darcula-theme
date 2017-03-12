@@ -176,7 +176,7 @@
 }
 
 .vbox.devices a {
-    color: #89f5a2
+    color: $glyph-active-color
 }
 
 .console-message-wrapper {
@@ -219,7 +219,7 @@
 
 .object-value-number,
 .object-value-boolean {
-    color: #89f5a2 !important
+    color: $glyph-active-color !important
 }
 
 .object-value-function {
@@ -239,7 +239,7 @@
 }
 
 .object-value-number {
-    color: #89f5a2 !important
+    color: $glyph-active-color !important
 }
 
 .object-value-calculate-value-button {
@@ -259,7 +259,7 @@
 }
 
 ::shadow .object-properties-section .number {
-    color: #89f5a2 !important
+    color: $glyph-active-color !important
 }
 
 ::shadow .console-object-preview .name {
@@ -278,7 +278,7 @@
 
 ::shadow .object-value-number,
 ::shadow .object-value-boolean {
-    color: #89f5a2 !important
+    color: $glyph-active-color !important
 }
 
 ::shadow .object-value-function {
@@ -298,7 +298,7 @@
 }
 
 ::shadow .object-value-number {
-    color: #89f5a2 !important
+    color: $glyph-active-color !important
 }
 
 ::shadow .object-value-calculate-value-button {

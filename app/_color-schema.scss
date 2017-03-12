@@ -12,7 +12,7 @@
 }
 
 .cm-atom {
-    color: #89f5a2 !important;
+    color: $glyph-active-color !important;
 }
 
 .cm-comment {
@@ -34,7 +34,7 @@
 }
 
 .cm-number {
-    color: #89f5a2 !important;
+    color: $glyph-active-color !important;
 }
 
 .cm-operator {
@@ -63,7 +63,7 @@
 
     @include feel-free {
         .cm-js-atom {
-            color: #89f5a2 !important;
+            color: $glyph-active-color !important;
         }
 
         .cm-js-attribute {
@@ -112,7 +112,7 @@
         .cm-js-number,
         .section .properties .number,
         .event-properties .number {
-            color: #89f5a2 !important;
+            color: $glyph-active-color !important;
         }
 
         .cm-js-operator {

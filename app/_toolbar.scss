@@ -63,7 +63,7 @@ body .inspector-view-toolbar.status-bar::shadow .status-bar-item .status-bar-cou
 ::shadow .toolbar-item > .glyph:active,
 ::shadow .filter-toolbar-item.toggled-shown .glyph,
 ::shadow button.toolbar-item.toggled-on .glyph {
-    background-color: #89f5a2 !important
+    background-color: $glyph-active-color !important
 }
 
 ::shadow .filter-toolbar-item.toggled-shown {
@@ -100,7 +100,7 @@ body .inspector-view-toolbar.status-bar::shadow .status-bar-item .status-bar-cou
 }
 
 ::shadow .toolbar-item.toggled-active .glyph {
-    background-color: #89f5a2 !important
+    background-color: $glyph-active-color !important
 }
 
 ::shadow .toolbar-divider {
@@ -117,7 +117,7 @@ body .inspector-view-toolbar.status-bar::shadow .status-bar-item .status-bar-cou
 
 ::shadow .toolbar-state-on.toolbar-button:enabled:not(:active) .toolbar-glyph,
 ::shadow .toolbar-button.toolbar-state-on .toolbar-glyph {
-    background-color: #89f5a2 !important
+    background-color: $glyph-active-color !important
 }
 
 ::shadow .toolbar-state-on .record-toolbar-item.toolbar-glyph,
@@ -129,7 +129,7 @@ body .inspector-view-toolbar.status-bar::shadow .status-bar-item .status-bar-cou
 ::shadow ::shadow .toolbar-button.toolbar-state-on .toolbar-glyph,
 ::shadow ::shadow .toolbar-blue-on-hover .toolbar-button:not(.toolbar-state-on):enabled.hover:not(:active),
 ::shadow ::shadow .-theme-selection-color {
-    background-color: #89f5a2 !important
+    background-color: $glyph-active-color !important
 }
 
 ::shadow .toolbar-shadow .toolbar-text {

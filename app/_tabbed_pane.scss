@@ -15,7 +15,7 @@
 .overrides-activate-network #tab-network,
 .overrides-activate-sensors #tab-sensors {
     .tabbed-pane-header-tab-title::after {
-        color: #89f5a2 !important;
+        color: $glyph-active-color !important;
     }
 }
 
@@ -31,7 +31,7 @@
     }
 
     .help-window-main .tabbed-pane-header-tab.selected {
-        color: #89f5a2 !important
+        color: $glyph-active-color !important
     }
 
     ::shadow .vertical-tab-layout .tabbed-pane-header-tab {
@@ -171,7 +171,7 @@ select.tabbed-pane-header-tabs-drop-down-select {
 }
 
 .tabbed-pane-header-tab.overrides-activate .tabbed-pane-header-tab-title::after {
-    color: #89f5a2 !important;
+    color: $glyph-active-color !important;
 }
 
 body .inspector-view-toolbar.toolbar::shadow .toolbar-button-theme {
