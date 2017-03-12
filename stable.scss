@@ -723,37 +723,7 @@ body.dock-to-right:not(.undocked):not(.overlay-contents) {
     background-color: #272727 !important
 }
 
-.soft-context-menu {
-    background: #2f2f2f !important;
-    border: 1px solid #3c3c3c !important;
-    color: #ccc !important
-}
-
-.soft-context-menu::shadow .soft-context-menu-item-mouse-over {
-    background-color: #434343 !important;
-    border-top: 1px solid #484848 !important;
-    border-bottom: 1px solid #484848 !important
-}
-
-.soft-context-menu::shadow .soft-context-menu-separator > .separator-line {
-    border-bottom: 1px solid #3c3c3c !important
-}
-
-.soft-context-menu::shadow .checkmark {
-    -webkit-mask-image: $Images_toolbarButtonGlyphs;
-    -webkit-mask-position: -128px -109px;
-    -webkit-mask-size: 352px 168px;
-    background-color: #89f5a2 !important;
-    background-image: none !important
-}
-
-.soft-context-menu::shadow .toolbar::shadow .toolbar-shadow.blue-on-hover .toolbar-item:not(.toggled-on).hover:enabled {
-    background-color: #2f2f2f !important
-}
-
-.soft-context-menu::shadow .toolbar::shadow .toolbar-shadow.blue-on-hover .toolbar-item:not(.toggled-on).hover:enabled .glyph {
-    color: #ccc !important
-}
+@import "app/soft-context-menu";
 
 ::shadow .tooltip {
     background: #2a2a2a !important;
@@ -2841,10 +2811,6 @@ inset 0 -1px 0 0 #484848
 .toolbar-gray-toggled::shadow .class-toolbar-item.hover .toolbar-button-text,
 .toolbar-gray-toggled::shadow .class-toolbar-item .toggled-off .toolbar-button-text {
     color: #7b7b7b !important
-}
-
-.sidebar-pane-section-toolbar {
-    background-color: #272727 !important
 }
 
 ::shadow .toolbar-button:not(.toolbar-has-glyph):not(.toolbar-has-dropdown):not(.menu-toolbar-item).hover {

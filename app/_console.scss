@@ -308,3 +308,17 @@
 ::shadow .object-value-error {
     color: #ff5a5a !important
 }
+
+#console-messages {
+    .console-message-wrapper {
+        .source-code {
+            ::shadow {
+                .elements-disclosure ol li.parent::before,
+                .elements-disclosure ol li.parent.expanded::before {
+                    margin-left: -3px;
+                    padding-left: 3px;
+                }
+            }
+        }
+    }
+}

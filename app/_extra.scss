@@ -1,0 +1,13 @@
+@import "__mixins";
+
+.sidebar-pane-section-toolbar.toolbar {
+    display: none !important;
+    background-color: #272727 !important;
+    color: red;
+    @include wrap-shadow {
+        .toolbar-shadow {
+            display: none !important;
+        }
+    }
+}
+

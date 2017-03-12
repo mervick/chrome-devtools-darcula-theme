@@ -1,0 +1,54 @@
+@import "__variables";
+
+.soft-context-menu {
+    background-color: $fg!important;
+    border: 1px solid $fg-suggest-box !important;
+    color: $color !important;
+    box-shadow: rgba(0, 0, 0, 0.247059) 0px 5px 10px !important;
+    &, ::shadow {
+        .soft-context-menu-item {
+            background-color: $fg!important;
+            color: $color !important;
+            border: 0!important;
+        }
+        .soft-context-menu-item-mouse-over {
+            border-top-color: $tabbed-pane-top-border-color !important;
+            border-bottom-color: $tabbed-pane-top-border-color !important;
+            background-color: $tabbed-pane-top-border-color !important;
+            color: $selection-color !important;
+        }
+        .soft-context-menu-separator > .separator-line {
+            border-bottom: 1px solid $fg-suggest-box !important
+        }
+        .checkmark {
+            -webkit-mask-image: $Images_toolbarButtonGlyphs;
+            -webkit-mask-position: -128px -109px;
+            -webkit-mask-size: 352px 168px;
+            background-color: $selection-fg !important;
+            background-image: none !important
+        }
+        .toolbar::shadow .toolbar-shadow.blue-on-hover .toolbar-item:not(.toggled-on).hover:enabled {
+            background-color: $fg !important;
+            .glyph {
+                color: #ccc !important
+            }
+        }
+    }
+}
+
+@include wrap-shadow {
+    .soft-context-menu-item {
+        background-color: $fg!important;
+        color: $color !important;
+        border: 0!important;
+    }
+    .soft-context-menu-item-mouse-over {
+        border-top-color: $tabbed-pane-top-border-color !important;
+        border-bottom-color: $tabbed-pane-top-border-color !important;
+        background-color: $tabbed-pane-top-border-color !important;
+        color: $selection-color !important;
+    }
+    .soft-context-menu-separator > .separator-line {
+        border-bottom: 1px solid $fg-suggest-box !important
+    }
+}
