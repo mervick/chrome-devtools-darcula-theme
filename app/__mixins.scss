@@ -45,3 +45,10 @@
         }
     }
 }
+
+@mixin wrap-shadow {
+    @content;
+    ::shadow {
+        @content;
+    }
+}
