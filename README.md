@@ -11,3 +11,7 @@ Installation Instructions
 
 ## Preview
 ![Chrome DevTools - Screenshot](https://raw.githubusercontent.com/mervick/chrome-devtools-darcula-theme/master/images/screenshot.png)
+
+## Credits
+
++ Inspirited by [ZeroDarkMatrix Theme](https://github.com/mauricecruz/chrome-devtools-zerodarkmatrix-theme)
