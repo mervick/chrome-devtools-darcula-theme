@@ -9,10 +9,10 @@
    },
    "author": "Andrey Izman",
    "browser_action": {
-      "default_icon": "icons/icon32.png"
+      "default_icon": "images/icon32.png"
    },
    "manifest_version": 2,
    "name": "Darcula Theme for Chrome DevTools",
    "update_url": "https://clients2.google.com/service/update2/crx",
-   "version": "1.0.1"
+   "version": "1.0.2"
 }
