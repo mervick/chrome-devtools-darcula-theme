@@ -1,0 +1,5 @@
+::-webkit-scrollbar,
+::shadow ::-webkit-scrollbar,
+::shadow ::shadow ::-webkit-scrollbar {
+    display: none;
+}

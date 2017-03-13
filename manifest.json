@@ -1,0 +1,14 @@
+{
+   "description": "Darcula Theme for Chrome DevTools",
+   "devtools_page": "devtools.html",
+   "homepage_url": "https://github.com/mervick/chrome-devtools-darcula-theme",
+   "icons": {
+      "16": "images/icon16.png",
+      "48": "images/icon48.png",
+      "128": "images/icon128.png"
+   },
+   "manifest_version": 2,
+   "name": "Darcula Theme for Chrome DevTools",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.0.0"
+}
